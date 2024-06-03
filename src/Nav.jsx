@@ -13,19 +13,7 @@ const Nav = () => {
        <li><NavLink to="/products" >Products</NavLink></li>
        <li><NavLink to="/trainer" >Trainer</NavLink></li>
        <li><NavLink to="/blog" >Blog</NavLink></li>
-   
-   
-   
-   
    </>
-  
-
-
-
-
-
-
-
     return (
         <div>
             <div className="navbar shadow-md bg-base-100">
