@@ -13,7 +13,7 @@ const Banner = () => {
             
 
 
-                 <div className=" flex-col md:flex-row lg:flex-row  flex justify-center items-center bg-cover bg-no-repeat  p-32 "
+                 <div className=" rounded-xl flex-col md:flex-row lg:flex-row  flex justify-center items-center bg-cover bg-no-repeat  p-32 "
                  
                  style={{backgroundImage: 'url(   https://img.freepik.com/premium-photo/portrait-muscled-athlete-bodybuilder-workouts-alone-sport-gym-indoors_489646-18891.jpg?w=740  )'}}
                  
