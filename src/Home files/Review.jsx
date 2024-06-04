@@ -17,7 +17,7 @@ const Review = () => {
         <div className=" mb-10 mt-20 ml-10 mr-10">
 
              <div className=' text-center'>
-                <h1 className=' mb-28 text-6xl font-serif'>Our Clients Say</h1>
+                <h1 className=' mb-20 text-6xl font-serif'>Our Clients Say</h1>
              </div>
 
 
