@@ -5,6 +5,7 @@ import Classes from "./Home files/Classes";
 import FitnessHub from "./Home files/FitnessHub";
 import Information from "./Home files/Information";
 import Member from "./Home files/Member";
+import Review from "./Home files/Review";
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Member></Member>
             <About></About>
             <FitnessHub></FitnessHub>
+            <Review></Review>
             
         </div>
     );
