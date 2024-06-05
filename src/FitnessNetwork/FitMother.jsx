@@ -1,15 +1,19 @@
 import Banner from "./Banner";
+import Path from "./Path";
+import Stat from "./Stat";
 
 
 
 
 const FitMother = () => {
     return (
-        <div >
+        <div className="  " >
 
             <div>
                  
                  <Banner></Banner>
+                 <Stat></Stat>
+                 <Path></Path>
 
 
 

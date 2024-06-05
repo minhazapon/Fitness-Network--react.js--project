@@ -3,7 +3,7 @@
 
 const Banner = () => {
     return (
-        <div className="   mb-10 mt-10 ml-10 mr-10">
+        <div className="    mb-10 mt-10  ml-10 mr-10">
 
             {/* <div className=" flex-col md:flex-row lg:flex-row rounded-xl bg-no-repeat bg-cover  p-40"
             
