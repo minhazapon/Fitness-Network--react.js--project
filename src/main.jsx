@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import Root from './Root';
 import Home from './Home';
+import FitMother from './FitnessNetwork/FitMother';
+
+
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      {
+        path: "/fit",
+        element: <FitMother></FitMother>,
+      },
+      
+     
     ],
   },
 ]);
