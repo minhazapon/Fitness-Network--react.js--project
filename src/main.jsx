@@ -9,6 +9,7 @@ import {
 import Root from './Root';
 import Home from './Home';
 import FitMother from './FitnessNetwork/FitMother';
+import Service from './servic/Service';
 
 
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/fit",
         element: <FitMother></FitMother>,
+      },
+      {
+        path: "/service",
+        element:  <Service></Service> ,
       },
       
      
