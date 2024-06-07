@@ -1,3 +1,6 @@
+import Best from "./Best";
+import Reasonable from "./Reasonable";
+import Reliable from "./Reliable";
 import SerBanner from "./SerBanner";
 
 
@@ -12,6 +15,9 @@ const Service = () => {
 
               
              <SerBanner></SerBanner>
+             <Best></Best>
+             <Reasonable></Reasonable>
+             <Reliable></Reliable>
 
 
 

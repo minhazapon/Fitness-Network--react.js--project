@@ -7,7 +7,7 @@ const SerBanner = () => {
 
          
             <div className=" text-center    p-10">
-                <h1 className="text-6xl font-serif">Fitness Network Center</h1>
+                <h1 className="text-6xl font-serif">Fitness <span className=" text-yellow-400">Network</span> Center</h1>
                 <p className=" text-xl font-serif mt-5">"Exercise not only changes your body, it changes your mind, your attitude, and your mood." – Unknown</p>
                 <button className=" btn mt-5 bg-yellow-400">Call Us</button>
             </div>
