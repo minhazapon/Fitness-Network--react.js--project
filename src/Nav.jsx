@@ -37,7 +37,6 @@ useEffect(() => {
        <li><NavLink to="/" >Home</NavLink></li>
        <li><NavLink to="/fit" >FitNetwork</NavLink></li>
        <li><NavLink to="/service" >Service</NavLink></li>
-       <li><NavLink to="/gym" >Gym</NavLink></li>
        <li><NavLink to="/products" >Products</NavLink></li>
        <li><NavLink to="/trainer" >Trainer</NavLink></li>
        <li><NavLink to="/blog" >Blog</NavLink></li>

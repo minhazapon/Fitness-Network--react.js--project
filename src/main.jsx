@@ -10,6 +10,7 @@ import Root from './Root';
 import Home from './Home';
 import FitMother from './FitnessNetwork/FitMother';
 import Service from './servic/Service';
+import ProductsMother from './Products/ProductsMother';
 
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element:  <Service></Service> ,
+      },
+      {
+        path: "/products",
+        element:  <ProductsMother></ProductsMother> ,
       },
       
      

@@ -21,7 +21,7 @@ const Reasonable = () => {
 
          <div className=" flex justify-center mt-10 ">
 
-          <div className=" grid  md:grid-cols-2 gap-10">
+          <div className=" grid   md:grid-cols-2 gap-10">
 
           <div className=" flex items-center gap-10 border-[1px] border-blue-500  p-5 rounded-xl">
            <div>
