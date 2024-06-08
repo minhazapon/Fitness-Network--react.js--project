@@ -3,6 +3,8 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Protein from './Protein';
+import Work from './Work';
 
 
 const ProductsTabs = () => {
@@ -28,8 +30,16 @@ const ProductsTabs = () => {
                 <Tab>Weight</Tab>
               
               </TabList>
+              <TabPanel>
+                <Protein></Protein>
+              </TabPanel>
+              <TabPanel>
+                <Work></Work>
+              </TabPanel>
               <TabPanel></TabPanel>
               <TabPanel></TabPanel>
+              <TabPanel></TabPanel>
+              
             </Tabs>
 
             </div>
