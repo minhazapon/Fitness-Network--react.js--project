@@ -1,6 +1,11 @@
 
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
 const CreDetails = ({cre}) => {
+
+  const crea = () => toast("Order Done");
     
     const {image, name, details, price} = cre
 
@@ -16,7 +21,8 @@ const CreDetails = ({cre}) => {
                <p className=" text-slate-400 font-serif "> {details} </p>
                <p className=" text-4xl font-serif "> Price: {price} </p>
                <div className="card-actions">
-                 <button  className="btn  text-black bg-yellow-500 ">Add Cart</button>
+                 <button  onClick={crea} className="btn  text-black bg-yellow-500 ">Add Cart</button>
+                 <ToastContainer />
                </div>
               </div>
             </div>

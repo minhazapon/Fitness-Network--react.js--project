@@ -7,7 +7,7 @@ import Protein from './Protein';
 import Work from './Work';
 import Amino from './Amino';
 import Creatine from './Creatine';
-import Weight from './Weight';
+
 
 
 const ProductsTabs = () => {
