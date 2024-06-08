@@ -5,6 +5,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Protein from './Protein';
 import Work from './Work';
+import Amino from './Amino';
+import Creatine from './Creatine';
+import Weight from './Weight';
 
 
 const ProductsTabs = () => {
@@ -27,7 +30,7 @@ const ProductsTabs = () => {
                 <Tab>Workout</Tab>
                 <Tab>Amino</Tab>
                 <Tab>Creatine</Tab>
-                <Tab>Weight</Tab>
+              
               
               </TabList>
               <TabPanel>
@@ -36,9 +39,13 @@ const ProductsTabs = () => {
               <TabPanel>
                 <Work></Work>
               </TabPanel>
-              <TabPanel></TabPanel>
-              <TabPanel></TabPanel>
-              <TabPanel></TabPanel>
+              <TabPanel>
+                <Amino></Amino>
+              </TabPanel>
+              <TabPanel>
+                <Creatine></Creatine>
+              </TabPanel>
+              
               
             </Tabs>
 
