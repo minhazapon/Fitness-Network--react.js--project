@@ -14,6 +14,7 @@ import ProductsMother from './Products/ProductsMother';
 import Login from './login/Login';
 import SignUp from './login/SignUp';
 import Gallery from './login/Gallery';
+import App from './Appointment/App';
 
 
 
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/gal",
         element:  <Gallery></Gallery> ,
+      },
+      {
+        path: "/app",
+        element:  <App></App> ,
       },
       
      
