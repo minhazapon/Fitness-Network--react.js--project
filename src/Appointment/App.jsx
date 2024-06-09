@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 
 
 const App = () => {
@@ -14,7 +14,13 @@ const App = () => {
               <div className="  flex-col md:flex-row lg:flex-row bg-black text-white p-10 ">
                <h1 className="  text-5xl font-serif">Make An<br></br> Appointment</h1>
                <p className="  text-xl mt-5 font-serif text-slate-500">Setting a gym appointment<br></br> is a great way to stay<br></br> committed to your fitness goals.<br></br> Here's a step-by-step<br></br> guide to help you schedule one</p>
+
+               
+                
+               <Link to="/contact" >
                <button className=" mt-5  w-[150px] bg-white text-black  btn">Contact</button>
+               </Link>
+              
 
               </div>
 
@@ -25,7 +31,7 @@ const App = () => {
             <div className="  flex-col md:flex-row lg:flex-row flex justify-center   gap-36 ">
 
 
-             <div className="   mb-24 mt-3  flex-col md:flex-row lg:flex-row flex items-center gap-3">
+             <div className="    mb-24 mt-3  flex-col md:flex-row lg:flex-row flex items-center gap-3">
                <img className=" h-[100px]" src="https://i.ibb.co/ZX0LJCS/schedule-1.png" alt="" />
                <img className=" h-[100px]" src="https://i.ibb.co/3BT9bvC/back-in-time.png" alt="" />
                <img className=" h-[100px]" src="https://i.ibb.co/zHztQKQ/application.png" alt="" />
@@ -34,6 +40,8 @@ const App = () => {
 
 
              <div className="   flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
+
+                <form>
 
                 <h1 className=" text-5xl text-center  mt-5">Its Quick & Easy</h1>
 
@@ -60,6 +68,13 @@ const App = () => {
                 {/* <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button> */}
                
                 </div>
+
+                  
+                  <div className=" flex justify-center">
+                  <input className=" bg-black text-white w-[300px] btn mt-5" type="submit" value="Book" />
+
+                  </div>
+                </form>
 
 
 
