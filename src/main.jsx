@@ -11,6 +11,9 @@ import Home from './Home';
 import FitMother from './FitnessNetwork/FitMother';
 import Service from './servic/Service';
 import ProductsMother from './Products/ProductsMother';
+import Login from './login/Login';
+import SignUp from './login/SignUp';
+import Gallery from './login/Gallery';
 
 
 
@@ -34,6 +37,18 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element:  <ProductsMother></ProductsMother> ,
+      },
+      {
+        path: "/login",
+        element:    <Login></Login> ,
+      },
+      {
+        path: "/up",
+        element: <SignUp></SignUp> ,
+      },
+      {
+        path: "/gal",
+        element:  <Gallery></Gallery> ,
       },
       
      

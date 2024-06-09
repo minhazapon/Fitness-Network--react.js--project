@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // ---------------theme
 import { useEffect, useState } from 'react'
@@ -91,8 +91,11 @@ useEffect(() => {
     </label>
     {/* ------------------------------------                      */}
 
-
+    <Link to="/login">
     <a className="btn bg-black text-white ">login</a>
+    </Link>
+
+    
   </div>
 </div>
             

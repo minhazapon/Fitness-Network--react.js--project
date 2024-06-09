@@ -1,3 +1,5 @@
+
+
 import ProductsBanner from "./ProductsBanner";
 import ProductsTabs from "./ProductsTabs";
 
@@ -9,6 +11,9 @@ const ProductsMother = () => {
 
              <ProductsBanner></ProductsBanner>
              <ProductsTabs></ProductsTabs>
+        
+            
+             
             
         </div>
     );
