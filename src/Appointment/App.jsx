@@ -1,5 +1,9 @@
 
 import { Link } from "react-router-dom";
+import Date from "./Date";
+
+
+
 
 
 const App = () => {
@@ -76,34 +80,17 @@ const App = () => {
                   </div>
                 </form>
 
-
-
-
              </div>
-
-
-
-
+            </div>
             </div>
 
+    {/* ---------------------------------------------------- */}
 
+           <div className=" flex justify-center mt-20">
+           <Date></Date>
 
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-
-
-           
+           </div>
+      
               
             
         </div>
