@@ -35,7 +35,7 @@ const data = [
     amt: 2181,
   },
   {
-    name: 'Cardio Crusade',
+    name: ' ',
     uv: 450,
     pv: 3800,
     amt: 2500,
@@ -75,14 +75,14 @@ const Charts = () => {
     return (
         <div>
 
-            <div className=' flex-col md:flex-row lg:flex-row '>
+            <div className=' flex-col md:flex-row lg:flex-row  '>
 
 
                 <div className='  flex-col md:flex-row lg:flex-row'>
 
                                <BarChart className='  flex-col md:flex-row lg:flex-row'
-                     width={400}
-                     height={300}
+                     width={380}
+                     height={600}
                      data={data}
                      margin={{
                        top: 20,

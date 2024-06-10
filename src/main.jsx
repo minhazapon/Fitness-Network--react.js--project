@@ -20,6 +20,7 @@ import Blog from './Blog/Blog';
 import Dash from './Dashboard/Dash';
 import Info from './Dashboard/Info';
 import Charts from './Dashboard/Charts';
+import Coach from './Dashboard/Coach';
 
 
 
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
           {
             path: "charts",
             element:  <Charts></Charts>,
+          },
+          {
+            path: "coach",
+            element:   <Coach></Coach> ,
           },
         ],
       },
