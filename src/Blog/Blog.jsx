@@ -31,36 +31,35 @@ const Blog = () => {
 		</div>
 		<div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700">
 			<div className="pt-6 pb-4 space-y-2">
-				<span>12 June</span>
-				<h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
+				
+				<h1 className="text-3xl font-bold">Youth Programs</h1>
+				<p>Fitness programs designed for children and teenagers.
+				Sports training and recreational activities.</p>
 				<a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-violet-400">
-					<span>Read more</span>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-						<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-					</svg>
+					<span className=" btn text-black  ">Read more</span>
+					
 				</a>
 			</div>
 			<div className="pt-6 pb-4 space-y-2">
-				<span>12 June</span>
-				<h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
+			
+				<h1 className="text-3xl font-bold">Senior Fitness Programs
+
+                </h1>
+				<p>Classes and training sessions designed for older adults.
+				Focus on mobility, balance, and overall health.</p>
 				<a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-violet-400">
-					<span>Read more</span>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-						<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-					</svg>
+					<span className=" btn text-black  " >Read more</span>
+					
 				</a>
 			</div>
 			<div className="pt-6 pb-4 space-y-2">
-				<span>12 June</span>
-				<h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
+			
+				<h1 className="text-3xl font-bold">Online Services</h1>
+				<p>Virtual classes and training sessions.
+				Online workout plans and instructional videos.</p>
 				<a rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm text-violet-400">
-					<span>Read more</span>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-						<path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-					</svg>
+					<span className=" btn text-black  " >Read more</span>
+					
 				</a>
 			</div>
 		</div>
@@ -82,69 +81,88 @@ const Blog = () => {
 
          <div  className=" mt-20">
 
-         <section className="bg-black text-gray-100">
+         <section className=" text-gray-100">
 	<div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-		<a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-gray-900">
-			<img src="https://source.unsplash.com/random/480x360" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 bg-gray-500" />
+		<a rel="noopener noreferrer" href="#" className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-black">
+			<img src="https://img.freepik.com/premium-photo/image-gym-fitness-bodybuilding-concept-mixed-media_392761-3969.jpg?w=740" alt="" className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 bg-gray-500" />
 			<div className="p-6 space-y-2 lg:col-span-5">
-				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">Noster tincidunt reprimique ad pro</h3>
-				<span className="text-xs text-gray-400">February 19, 2021</span>
-				<p>Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est in graece fuisset, eos affert putent doctus id.</p>
+				<h3 className="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline">How to Choose a Gym Service</h3>
+				<u>
+                <li>## Identify Your Goals: Determine what you want to achieve (weight loss, muscle gain, general fitness, etc.).</li>
+                <li>## Evaluate Facilities: Visit and inspect the gym facilities and equipment.</li>
+                <li>## Check Trainer Credentials: Ensure trainers and instructors are certified.</li>
+                <li>## Review Class Schedules: Make sure the class timings fit your schedule.</li>
+
+
+
+				</u> 
+				
 			</div>
 		</a>
 		<div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?1" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/free-photo/athletic-man-practicing-gymnastics-keep-fit_23-2150989935.jpg?t=st=1717991833~exp=1717995433~hmac=7e290f50f092ac894b6b3fe76fc6dfa4f8a61d4f0ccc72c2586733b972c9fe49&w=740" />
+				<div className="p-6 space-y-2">
+					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline"> General Membership</h3>
+					<span className="text-xs text-gray-400">January 21, 2024</span>
+					<p>Access to Equipment: Unlimited access to cardio machines, free weights, strength machines, and other standard gym equipment.
+					Facilities Use: Includes locker rooms, showers, and sometimes amenities like saunas or steam rooms.</p>
+				</div>
+			</a>
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black   ">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/premium-photo/sport-fitness-equipment-lifestyle-people-concept-men-exercising-gym-machine_380164-74413.jpg?w=360" />
+				<div className="p-6 space-y-2">
+					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Personal Training</h3>
+					<span className="text-xs text-gray-400">January 22, 2024</span>
+					<p>One-on-One Training: Sessions with certified personal trainers to provide personalized workouts and guidance.
+Custom Workout Plans: Tailored plans based on individual fitness goals, such as weight loss, muscle gain, or athletic performance.
+Nutritional Advice: Guidance on diet and nutrition to complement the workout plan.
+Progress Tracking: Regular assessments and adjustments to the training program based on progress..</p>
+				</div>
+			</a>
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black  ">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/premium-photo/caucasian-man-doing-workout-with-dumbbells-gym_359031-28551.jpg?w=740" />
+				<div className="p-6 space-y-2">
+					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Group Fitness Classes</h3>
+					<span className="text-xs text-gray-400">January 23, 2024</span>
+					<p>Cardio: Spinning, dance, Zumba.
+Strength: BodyPump, kettlebell classes.
+Flexibility: Yoga, Pilates.
+High-Intensity: HIIT, boot camps.</p>
+				</div>
+			</a>
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black hidden sm:block">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/free-photo/crossfit-concept-with-man-pulling-tow_23-2147671892.jpg?t=st=1717991933~exp=1717995533~hmac=27e773e5d5bf3ad8b85679ac0d331215a0351c558761e2014b4e7b2d6c86d210&w=360" />
 				<div className="p-6 space-y-2">
 					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 21, 2021</span>
+					<span className="text-xs text-gray-400">January 24, 2024</span>
 					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
 				</div>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?2" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black hidden sm:block">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/premium-photo/silhouette-man-boxing_23-2148024354.jpg?w=740" />
 				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 22, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">Specialty Programs</h3>
+					<span className="text-xs text-gray-400">January 25, 2024</span>
+					<p>Boot Camps: Intense training programs often held outdoors or in a group setting, focusing on overall fitness.
+Weight Loss Programs: Comprehensive programs combining diet, exercise, and behavioral strategies.
+Sports-Specific Training: Programs tailored for athletes to improve performance in specific sports.
+Bodybuilding: Programs focused on muscle gain and strength training.</p>
 				</div>
 			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?3" />
+			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-black hidden sm:block">
+				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://img.freepik.com/premium-photo/low-section-woman-exercising-against-black-background_1048944-20421846.jpg?w=740" />
 				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 23, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?4" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 24, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?5" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 25, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
-				</div>
-			</a>
-			<a rel="noopener noreferrer" href="#" className="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-900 hidden sm:block">
-				<img role="presentation" className="object-cover w-full rounded h-44 bg-gray-500" src="https://source.unsplash.com/random/480x360?6" />
-				<div className="p-6 space-y-2">
-					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
-					<span className="text-xs text-gray-400">January 26, 2021</span>
-					<p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+					<h3 className="text-2xl font-semibold group-hover:underline group-focus:underline"> Wellness Services</h3>
+					<span className="text-xs text-gray-400">January 26, 2024</span>
+					<p>Nutritional Counseling: Personalized dietary advice to support fitness goals.
+Massage Therapy: Therapeutic massages to aid in recovery and relaxation.
+Physical Therapy: Services to help with rehabilitation from injuries and to improve mobility and strength.
+Mindfulness and Stress Management: Yoga, meditation, and other activities aimed at mental well-being.</p>
 				</div>
 			</a>
 		</div>
-		<div className="flex justify-center">
-			<button type="button" className="px-6 py-3 text-sm rounded-md hover:underline bg-gray-900 text-gray-400">Load more posts...</button>
-		</div>
+		
 	</div>
 </section>
 

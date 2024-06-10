@@ -34,17 +34,45 @@ useEffect(() => {
 
    const  fit = <>
        
-       <li><NavLink to="/" >Home</NavLink></li>
-       <li><NavLink to="/fit" >FitNetwork</NavLink></li>
-       <li><NavLink to="/service" >Service</NavLink></li>
-       <li><NavLink to="/products" >Products</NavLink></li>
-       <li><NavLink to="/trainer" >Trainer</NavLink></li>
-       <li><NavLink to="/blog" >Blog</NavLink></li>
-       <li><NavLink to="/app" >Appointment</NavLink></li>
-       <li><NavLink to="/gal" >Gallery</NavLink></li>
+      
+      <div className="tooltip" data-tip="Home">
+      <li><NavLink to="/" >Home</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="FitNetwork">
+      <li><NavLink to="/fit" >FitNetwork</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Service">
+      <li><NavLink to="/service" >Service</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Products">
+      <li><NavLink to="/products" >Products</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Trainer">
+      <li><NavLink to="/trainer" >Trainer</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Blog">
+      <li><NavLink to="/blog" >Blog</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Appointment">
+      <li><NavLink to="/app" >Appointment</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Gallery">
+      <li><NavLink to="/gal" >Gallery</NavLink></li>
+      </div>
+      <div className="tooltip" data-tip="Dashboard">
+      <li><NavLink to="/dash" >Dashboard</NavLink></li>
+      </div>
+       
+       
+       
+       
+     
+      
+       
+       
    </>
     return (
-        <div>
+        <div  className=" mt-4">
             <div className="navbar shadow-md bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">

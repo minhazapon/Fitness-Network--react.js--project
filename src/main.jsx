@@ -17,6 +17,8 @@ import Gallery from './login/Gallery';
 import App from './Appointment/App';
 import Contact from './Home files/Contact';
 import Blog from './Blog/Blog';
+import Dash from './Dashboard/Dash';
+import Info from './Dashboard/Info';
 
 
 
@@ -64,6 +66,16 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element:   <Blog></Blog> ,
+      },
+      {
+        path: "/dash",
+        element:   <Dash></Dash> ,
+        children: [
+          {
+            path: "info",
+            element: <Info></Info>,
+          },
+        ],
       },
       
      
