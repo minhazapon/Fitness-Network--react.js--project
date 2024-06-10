@@ -19,6 +19,7 @@ import Contact from './Home files/Contact';
 import Blog from './Blog/Blog';
 import Dash from './Dashboard/Dash';
 import Info from './Dashboard/Info';
+import Charts from './Dashboard/Charts';
 
 
 
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
           {
             path: "info",
             element: <Info></Info>,
+          },
+          {
+            path: "charts",
+            element:  <Charts></Charts>,
           },
         ],
       },
