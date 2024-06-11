@@ -23,6 +23,8 @@ import Charts from './Dashboard/Charts';
 import Coach from './Dashboard/Coach';
 import Goal from './Dashboard/Goal';
 import Payment from './Dashboard/Payment';
+import Location from './Dashboard/Location';
+import Trainer from './trainer/Trainer';
 
 
 
@@ -72,6 +74,10 @@ const router = createBrowserRouter([
         element:   <Blog></Blog> ,
       },
       {
+        path: "/train",
+        element:   <Trainer></Trainer> ,
+      },
+      {
         path: "/dash",
         element:   <Dash></Dash> ,
         children: [
@@ -94,6 +100,10 @@ const router = createBrowserRouter([
           {
             path: "pay",
             element: <Payment></Payment>,
+          },
+          {
+            path: "location",
+            element:  <Location></Location>,
           },
         ],
       },

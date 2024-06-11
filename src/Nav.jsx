@@ -48,7 +48,7 @@ useEffect(() => {
       <li><NavLink to="/products" >Products</NavLink></li>
       </div>
       <div className="tooltip" data-tip="Trainer">
-      <li><NavLink to="/trainer" >Trainer</NavLink></li>
+      <li><NavLink to="/train" >Trainer</NavLink></li>
       </div>
       <div className="tooltip" data-tip="Blog">
       <li><NavLink to="/blog" >Blog</NavLink></li>
