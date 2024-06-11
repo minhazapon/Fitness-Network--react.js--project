@@ -21,6 +21,8 @@ import Dash from './Dashboard/Dash';
 import Info from './Dashboard/Info';
 import Charts from './Dashboard/Charts';
 import Coach from './Dashboard/Coach';
+import Goal from './Dashboard/Goal';
+import Payment from './Dashboard/Payment';
 
 
 
@@ -84,6 +86,14 @@ const router = createBrowserRouter([
           {
             path: "coach",
             element:   <Coach></Coach> ,
+          },
+          {
+            path: "goal",
+            element:  <Goal></Goal>,
+          },
+          {
+            path: "pay",
+            element: <Payment></Payment>,
           },
         ],
       },
