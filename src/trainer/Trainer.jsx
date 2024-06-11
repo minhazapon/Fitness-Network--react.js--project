@@ -9,7 +9,7 @@ const Trainer = () => {
 
 
 
-
+             <h1>Train</h1>
 
 
 
