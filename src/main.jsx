@@ -29,6 +29,11 @@ import Alex from './trainer/Alex';
 import Case from './trainer/Case';
 import Jamie from './trainer/Jamie';
 import Taylor from './trainer/Taylor';
+import Jordan from './trainer/Jordan';
+import Morgan from './trainer/Morgan';
+import Reed from './trainer/Reed';
+import Quin from './trainer/Quin';
+import Devin from './trainer/Devin';
 
 
 
@@ -97,6 +102,26 @@ const router = createBrowserRouter([
       {
         path: "/t4",
         element:   <Taylor></Taylor>,
+      },
+      {
+        path: "/t5",
+        element:    <Jordan></Jordan>,
+      },
+      {
+        path: "/t6",
+        element:   <Morgan></Morgan> ,
+      },
+      {
+        path: "/t7",
+        element:  <Reed></Reed> ,
+      },
+      {
+        path: "/t8",
+        element:   <Quin></Quin> ,
+      },
+      {
+        path: "/t9",
+        element:   <Devin></Devin> ,
       },
      
       {
