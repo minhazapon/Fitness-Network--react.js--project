@@ -24,8 +24,22 @@ const Banner = () => {
                     <h1 className=" text-5xl font-serif ">Fitness</h1>
                     <img className=" h-[100px]" src="https://i.ibb.co/yP6B98t/gym.png" alt="" />
                     <p className=" text-5xl font-serif mt-10">WelCome To Fitness Network</p>
-                    <button className=" p-3 mt-14 font-serif border-[1px]  border-yellow-400">Book A Tour Day</button>
+                      
+                    <div>
+                    <a href="#_" className="relative mt-5 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-white rounded-full shadow-md group">
+                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-yellow-400 group-hover:translate-x-0 ease">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                    <span className="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">Book A Tour Day</span>
+                    <span className="relative invisible">Book A Tour Day</span>
+                    </a>
                     </div>
+                   
+
+
+                    </div>
+
+                   
                    
 
                  </div>

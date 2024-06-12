@@ -9,7 +9,7 @@ const Footer = () => {
 <footer className="footer p-10 bg-base-200 text-base-content">
   <aside>
 
-    <img src="https://i.ibb.co/mBQWDSX/running.png" alt="" />
+    <img className=" animate__animated animate__lightSpeedInLeft  animate__repeat-2" src="https://i.ibb.co/mBQWDSX/running.png" alt="" />
     <p className=" text-6xl font-serif">Fitness <span className=" text-yellow-400">Network</span></p>
   </aside> 
   <nav>

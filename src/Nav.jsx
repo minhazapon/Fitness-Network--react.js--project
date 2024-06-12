@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 // -----------------------------------------
 
 
+import 'animate.css';
+
 
 const Nav = () => {
 
@@ -88,7 +90,7 @@ useEffect(() => {
      
      <div className=" flex items-center gap-2">
        
-     <img className=" h-[50px]" src="https://i.ibb.co/mBQWDSX/running.png" alt="" />
+     <img className=" animate__animated animate__lightSpeedInLeft  animate__repeat-2 h-[50px]" src="https://i.ibb.co/mBQWDSX/running.png" alt="" />
     <a className=" text-2xl  font-serif ">Fitness <span className=" text-yellow-400">Network</span></a>
 
      </div>
@@ -120,7 +122,18 @@ useEffect(() => {
     {/* ------------------------------------                      */}
 
     <Link to="/login">
-    <a className="btn bg-black text-white ">login</a>
+
+                    <div>
+                    <a href="#_" className="relative  inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
+                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </span>
+                    <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">login</span>
+                    <span className="relative invisible">login</span>
+                    </a>
+                    </div>
+
+    {/* <a className="btn bg-black text-white "></a> */}
     </Link>
 
     
