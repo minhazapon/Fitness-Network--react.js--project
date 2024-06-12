@@ -25,6 +25,11 @@ import Goal from './Dashboard/Goal';
 import Payment from './Dashboard/Payment';
 import Location from './Dashboard/Location';
 import Trainer from './trainer/Trainer';
+import Alex from './trainer/Alex';
+import Case from './trainer/Case';
+import Jamie from './trainer/Jamie';
+import Taylor from './trainer/Taylor';
+
 
 
 
@@ -77,6 +82,23 @@ const router = createBrowserRouter([
         path: "/train",
         element:   <Trainer></Trainer> ,
       },
+      {
+        path: "/t1",
+        element:  <Alex></Alex> ,
+      },
+      {
+        path: "/t2",
+        element:   <Case></Case> ,
+      },
+      {
+        path: "/t3",
+        element:  <Jamie></Jamie>,
+      },
+      {
+        path: "/t4",
+        element:   <Taylor></Taylor>,
+      },
+     
       {
         path: "/dash",
         element:   <Dash></Dash> ,
