@@ -30,6 +30,7 @@ const Reasonable = () => {
            </div>
            <div>
              <p className=" text-2xl font-serif">400$</p>
+                     
              <button className=" border-[1px] border-blue-500 btn mt-2   ">View Details</button>
            </div>
          </div>
