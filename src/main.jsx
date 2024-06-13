@@ -34,6 +34,8 @@ import Morgan from './trainer/Morgan';
 import Reed from './trainer/Reed';
 import Quin from './trainer/Quin';
 import Devin from './trainer/Devin';
+import BookDay from './Home files/BookDay';
+import Benifits from './Home files/Benifits';
 
 
 
@@ -122,6 +124,14 @@ const router = createBrowserRouter([
       {
         path: "/t9",
         element:   <Devin></Devin> ,
+      },
+      {
+        path: "/book",
+        element: <BookDay></BookDay> ,
+      },
+      {
+        path: "/benifits",
+        element:  <Benifits></Benifits> ,
       },
      
       {

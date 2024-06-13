@@ -1,5 +1,7 @@
 
 
+import { Link } from "react-router-dom";
+
 
  
 
@@ -25,6 +27,8 @@ const Banner = () => {
                     <img className=" h-[100px]" src="https://i.ibb.co/yP6B98t/gym.png" alt="" />
                     <p className=" text-5xl font-serif mt-10">WelCome To Fitness Network</p>
                       
+
+                    <Link to="/book" >
                     <div>
                     <a href="#_" className="relative mt-5 inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-white rounded-full shadow-md group">
                     <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
@@ -34,6 +38,8 @@ const Banner = () => {
                     <span className="relative invisible">Book A Tour Day</span>
                     </a>
                     </div>
+                    </Link>  
+                    
                    
 
 
