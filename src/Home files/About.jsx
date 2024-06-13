@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 
 
 
@@ -13,7 +14,11 @@ const About = () => {
                  <h1 className=" text-6xl font-serif">About Us</h1>
                  <p className=" mt-5 text-3xl font-serif">Fitness Center Information</p>
                  <p className=" text-xl text-slate-500 mt-5">Gyms are facilities equipped with a variety of exercise<br></br> equipment and amenities designed to help <br></br>individuals improve their fitness,<br></br> strength, flexibility, and overall health. They cater <br></br>to a wide range of fitness levels and goals,<br></br> from beginner to advanced athletes. Here’s <br></br>an in-depth look at what gyms typically <br></br> offer and how to make the most of your gym experience</p>
-                    <div>
+
+                     <Link to="/learn" >
+
+
+                     <div>
                     <a href="#_" className="relative mt-5   inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
                     <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -22,6 +27,10 @@ const About = () => {
                     <span className="relative invisible">Learn More </span>
                     </a>
                     </div>
+                     
+                     
+                     </Link>
+                    
               </div>
 
               

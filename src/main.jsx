@@ -36,6 +36,7 @@ import Quin from './trainer/Quin';
 import Devin from './trainer/Devin';
 import BookDay from './Home files/BookDay';
 import Benifits from './Home files/Benifits';
+import Learn from './Home files/Learn';
 
 
 
@@ -132,6 +133,10 @@ const router = createBrowserRouter([
       {
         path: "/benifits",
         element:  <Benifits></Benifits> ,
+      },
+      {
+        path: "/learn",
+        element:   <Learn></Learn> ,
       },
      
       {
