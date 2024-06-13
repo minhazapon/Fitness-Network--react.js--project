@@ -37,6 +37,8 @@ import Devin from './trainer/Devin';
 import BookDay from './Home files/BookDay';
 import Benifits from './Home files/Benifits';
 import Learn from './Home files/Learn';
+import More from './FitnessNetwork/More';
+import Join from './FitnessNetwork/Join';
 
 
 
@@ -137,6 +139,14 @@ const router = createBrowserRouter([
       {
         path: "/learn",
         element:   <Learn></Learn> ,
+      },
+      {
+        path: "/more",
+        element:  <More></More> ,
+      },
+      {
+        path: "/join",
+        element:  <Join></Join> ,
       },
      
       {
