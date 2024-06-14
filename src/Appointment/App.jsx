@@ -1,12 +1,40 @@
 
 import { Link } from "react-router-dom";
 import Date from "./Date";
+import { useRef } from "react";
 
 
 
 
 
 const App = () => {
+
+    const nam1Ref = useRef(null)
+    const name2Ref = useRef(null)
+    const mesgRef = useRef(null)
+    const dateRef = useRef(null)
+    const coachRef = useRef(null)
+
+
+
+   const appointment = e => {
+
+     e.preventDefault();
+     console.log(nam1Ref.current.value)
+     console.log(name2Ref.current.value)
+     console.log(mesgRef.current.value)
+     console.log(dateRef.current.value)
+     console.log(coachRef.current.value)
+     
+
+
+   }
+
+
+
+
+
+
     return (
         <div className=" mb-10 mt-10 ml-10 mr-10">
 
@@ -56,29 +84,29 @@ const App = () => {
 
              <div className="   flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
 
-                <form>
+                <form onSubmit={appointment} >
 
                 <h1 className=" text-5xl text-center  mt-5">Its Quick & Easy</h1>
 
                 <div className="  flex-col md:flex-row lg:flex-row   mt-5">
                 <div className=" flex-col md:flex-row lg:flex-row flex items-center gap-3">
-                <input placeholder="First Name" className=" p-1   border-[1px] border-black" type="text" />
-                <input placeholder="Last Name" className="  p-1   border-[1px] border-black" type="text" />
+                <input ref={nam1Ref} placeholder="First Name" className=" p-1   border-[1px] border-black" type="text" />
+                <input ref={name2Ref} placeholder="Last Name" className="  p-1   border-[1px] border-black" type="text" />
                 </div>  
                 <div className=" flex-col md:flex-row lg:flex-row mt-2">
                      {/* <textarea placeholder=" Message" className=" border-[1px] border-black w-[395px]   h-[150px] " name="" id=""></textarea> */}
 
 
                 <label className="block">
-				<textarea rows="3"  placeholder="Message" className="block border-[1px] p-2 border-black  h-[150px] w-full rounded-md 
+				<textarea ref={mesgRef} rows="3"  placeholder="Message" className="block border-[1px] p-2 border-black  h-[150px] w-full rounded-md 
                   dark:bg-gray-100"></textarea>
 		      	</label> 
 
 
                 </div>
                 <div className="  mt-3 flex-col md:flex-row lg:flex-row flex items-center gap-3">
-                <input  className=" p-1  border-[1px] border-black" type="date" name="time" id="" />
-                <input placeholder="Coach Name" className=" w-[236px]  p-1  border-[1px] border-black" type="text" />
+                <input  ref={dateRef} className=" p-1  border-[1px] border-black" type="date" name="time" id="" />
+                <input  ref={coachRef} placeholder="Coach Name" className=" w-[236px]  p-1  border-[1px] border-black" type="text" />
                 </div> 
                 {/* <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button> */}
                
@@ -86,9 +114,17 @@ const App = () => {
 
                   
                   <div className=" flex justify-center">
-                  <input className=" bg-black text-white w-[300px] btn mt-5" type="submit" value="Book" />
-
+                  <input onClick={()=>document.getElementById('my_modal_1').showModal()} className=" bg-black text-white w-[300px] btn mt-5" type="submit" value="Book" />
                   </div>
+                              <dialog id="my_modal_1" className="modal">
+                          <div className="modal-box">
+                            <div className=" flex justify-center items-center  gap-5">
+			            		<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
+			            		<h1 className=" text-4xl font-serif text-black ">Booking Done</h1>
+			            	</div>
+                            
+                          </div>
+                        </dialog>
                 </form>
 
              </div>

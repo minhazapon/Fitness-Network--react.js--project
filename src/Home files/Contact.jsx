@@ -1,7 +1,27 @@
+import { useRef } from "react";
 
 
 
 const Contact = () => {
+    
+	const nameRef = useRef(null)
+	const emailRef = useRef(null)
+	const mesgRef = useRef(null)
+
+    const contact = e => {
+
+       e.preventDefault();
+	   console.log(nameRef.current.value)
+	   console.log(emailRef.current.value)
+	   console.log(mesgRef.current.value)
+
+
+	}
+
+
+
+
+
     return (
         <div className=" mb-10 mt-20 ml-10 mr-10">
 
@@ -38,20 +58,32 @@ const Contact = () => {
 				</p>
 			</div>
 		</div>
-		<form noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+		<form onSubmit={contact}  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input type="text" placeholder="Full Name" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
+				<input ref={nameRef} name="name" type="text" placeholder="Full Name" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
 			</label>
 			<label className="block">
 				<span className="mb-1"></span>
-				<input type="email" placeholder="Email address" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
+				<input ref={emailRef} name="email" type="email" placeholder="Email address" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea placeholder="Message" rows="3" className="block w-full p-5 rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+				<textarea ref={mesgRef} name="text" placeholder="Message" rows="3" className="block w-full p-5 text-black rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
 			</label>
-             <input className="self-center btn text-lg rounded focus:ring hover:ring focus:ring-opacity-75 " type="submit" value="Submit" />
+             <input onClick={()=>document.getElementById('my_modal_1').showModal()} className="self-center btn text-lg rounded focus:ring hover:ring focus:ring-opacity-75 " type="submit" value="Submit" />
+
+			 {/* Open the modal using document.getElementById('ID').showModal() method */}
+           
+            <dialog id="my_modal_1" className="modal">
+              <div className="modal-box">
+                <div className=" flex justify-center items-center  gap-5">
+					<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
+					<h1 className=" text-4xl font-serif text-black ">Submit Done</h1>
+				</div>
+                
+              </div>
+            </dialog>
 		
 		</form>
 	</div>
