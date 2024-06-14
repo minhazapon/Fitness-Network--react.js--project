@@ -44,6 +44,9 @@ import CallUs from './servic/CallUs';
 import B1 from './servic/B1';
 import B2 from './servic/B2';
 import B3 from './servic/B3';
+import Read1 from './Blog/Read1';
+import Read2 from './Blog/Read2';
+import Read3 from './Blog/Read3';
 
 
 
@@ -172,6 +175,18 @@ const router = createBrowserRouter([
       {
         path: "/b3",
         element:  <B3></B3> ,
+      },
+      {
+        path: "/r1",
+        element:  <Read1></Read1>  ,
+      },
+      {
+        path: "/r2",
+        element:  <Read2></Read2> ,
+      },
+      {
+        path: "/r3",
+        element: <Read3></Read3> ,
       },
      
       {
