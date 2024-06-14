@@ -10,7 +10,7 @@ const Clients = () => {
 
                  <div  className="  flex-col md:flex-row lg:flex-row flex  justify-center items-center gap-10">
  
-                 <div className=" border-[1px]  border-b-slate-500 bg-black text-white rounded-xl  p-2">
+                 <div className=" border-[1px]   border-b-slate-500 bg-black text-white rounded-xl  p-2">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="  https://img.freepik.com/premium-photo/muscular-african-american-young-man-gym-showing-muscles-fitness-model-trains-gym_641698-1812.jpg?w=740  " className=" w-[200px] h-[300px] rounded-lg shadow-2xl" />
                     <div>

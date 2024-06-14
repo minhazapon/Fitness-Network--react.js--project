@@ -39,6 +39,7 @@ import Benifits from './Home files/Benifits';
 import Learn from './Home files/Learn';
 import More from './FitnessNetwork/More';
 import Join from './FitnessNetwork/Join';
+import ClientsView from './FitnessNetwork/ClientsView';
 
 
 
@@ -147,6 +148,10 @@ const router = createBrowserRouter([
       {
         path: "/join",
         element:  <Join></Join> ,
+      },
+      {
+        path: "/cv",
+        element:   <ClientsView></ClientsView> ,
       },
      
       {

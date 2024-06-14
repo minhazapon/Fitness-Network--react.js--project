@@ -1,8 +1,24 @@
 
 
 
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Flexible = () => {
+
+
+	const choose1  = () => toast("Get Started");
+    const choose2  = () => toast("Get Started");
+    const choose3  = () => toast("Get Started");
+
+
+
+
+
+
+
     return (
         <div className=" mb-10 mt-20 ml-10 mr-10">
 
@@ -47,7 +63,8 @@ const Flexible = () => {
 							<span>Functional Training Areas</span>
 						</li>
 					</ul>
-					<button type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded  btn ">Get Started</button>
+					<button onClick={choose1} type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded  btn ">Get Started</button>
+					<ToastContainer />
 				</div>
 			</div>
 			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -77,7 +94,8 @@ const Flexible = () => {
 							<span>Group Exercise Classes</span>
 						</li>
 					</ul>
-					<button className=" btn">Get Started </button>
+					<button onClick={choose2} className=" btn">Get Started </button>
+					<ToastContainer />
 				</div>
 			</div>
 			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -115,7 +133,10 @@ const Flexible = () => {
 							<span>Sports Facilities</span>
 						</li>
 					</ul>
-                    <button className=" btn">Get Started </button>				</div>
+                    <button onClick={choose3} className=" btn">Get Started </button>
+					<ToastContainer />
+
+									</div>
 			</div>
 		</div>
 	</div>

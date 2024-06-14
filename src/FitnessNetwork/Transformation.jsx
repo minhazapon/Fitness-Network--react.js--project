@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -11,6 +12,9 @@ const Transformation = () => {
 
              <div className=" bg-yellow-50 p-5  flex-col md:flex-row lg:flex-row flex justify-center items-center  gap-52">
               <h1 className=" text-5xl font-serif"><span className=" text-yellow-400">Transformation</span> Speak<br></br> Louder Than Word </h1>
+
+                    <Link to="/cv" >
+                    
                     <div>
                     <a href="#_" className="relative    inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
                     <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
@@ -20,6 +24,10 @@ const Transformation = () => {
                     <span className="relative invisible">View More</span>
                     </a>
                     </div>  
+
+
+                    </Link>
+                    
                 
             
              </div>

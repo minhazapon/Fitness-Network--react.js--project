@@ -1,6 +1,11 @@
 
 
 
+
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -15,7 +20,12 @@ import { Navigation } from 'swiper/modules';
 
 const Path = () => {
 
-   
+    const choose1  = () => toast("Choose Done");
+    const choose2  = () => toast("Choose Done");
+    const choose3  = () => toast("Choose Done");
+    const choose4  = () => toast("Choose Done");
+    const choose5  = () => toast("Choose Done");
+    const choose6  = () => toast("Choose Done");
 
     return (
         <div className=" mt-20 mb-10 ml-10 mr-10">
@@ -46,7 +56,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide"> Interval Training</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button onClick={choose1} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
                
               </div>
@@ -62,7 +73,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide">CrossFit</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button  onClick={choose2} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
               </div>
               </div>
@@ -76,7 +88,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide">Strength Training</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button  onClick={choose3} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
               </div>
               </div>
@@ -90,7 +103,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide">Powerlifting</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button  onClick={choose4} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
               </div>
               </div>
@@ -104,7 +118,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide">Bodybuilding</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button  onClick={choose5} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
               </div>
               </div>
@@ -117,7 +132,8 @@ const Path = () => {
             			<h2 className="text-3xl font-semibold tracking-wide">Kickboxing</h2>
             			<p className="text-gray-100">Join Fitness Network and Traning with Us</p>
             		</div>
-                    <button className=' btn text-center'>Choose</button>
+                    <button  onClick={choose6} className=' btn text-center'>Choose</button>
+                    <ToastContainer />
             	</div>
               </div>
               </div></SwiperSlide>
