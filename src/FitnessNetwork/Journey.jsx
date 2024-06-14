@@ -1,5 +1,7 @@
 
 
+import { Link } from "react-router-dom";
+
 
 const Journey = () => {
     return (
@@ -18,6 +20,9 @@ const Journey = () => {
             <div className=" bg-gradient-to-r from-black  p-5">
                 <h1 className=" text-5xl font-serif">Ready To Start Your<br></br> Journey With<br></br> <span className=" text-yellow-400">Fitness Network</span></h1>
                 <p className=" mt-5 text-xl">Ready To Join With Us</p>
+                    
+                    <Link to="/join" >
+
 
                     <div>
                     <a href="#_" className="relative  mt-5  inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-white rounded-full shadow-md group">
@@ -28,6 +33,10 @@ const Journey = () => {
                     <span className="relative invisible">Join Now</span>
                     </a>
                     </div>  
+                    
+                    
+                    </Link>
+                    
               
             </div>
 

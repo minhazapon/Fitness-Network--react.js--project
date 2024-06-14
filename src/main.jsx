@@ -40,6 +40,10 @@ import Learn from './Home files/Learn';
 import More from './FitnessNetwork/More';
 import Join from './FitnessNetwork/Join';
 import ClientsView from './FitnessNetwork/ClientsView';
+import CallUs from './servic/CallUs';
+import B1 from './servic/B1';
+import B2 from './servic/B2';
+import B3 from './servic/B3';
 
 
 
@@ -152,6 +156,22 @@ const router = createBrowserRouter([
       {
         path: "/cv",
         element:   <ClientsView></ClientsView> ,
+      },
+      {
+        path: "/call",
+        element:   <CallUs></CallUs> ,
+      },
+      {
+        path: "/b1",
+        element:  <B1></B1> ,
+      },
+      {
+        path: "/b2",
+        element:  <B2></B2> ,
+      },
+      {
+        path: "/b3",
+        element:  <B3></B3> ,
       },
      
       {
