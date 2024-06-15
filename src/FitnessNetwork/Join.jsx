@@ -1,8 +1,37 @@
+import { useRef } from "react";
 
 
 
 
 const Join = () => {
+
+     const nameRef = useRef(null)
+     const emailRef = useRef(null)
+     const malRef = useRef(null)
+     const FemaleRef = useRef(null)
+     const dateRef = useRef(null)
+
+
+    const join = e => {
+     
+       e.preventDefault()
+       console.log(nameRef.current.value)
+       console.log(emailRef.current.value)
+       console.log(malRef.current.value)
+       console.log(FemaleRef.current.value)
+       console.log(dateRef.current.value)
+
+
+
+    }
+
+
+
+
+
+
+
+
     return (
         <div className=" mb-10 mt-10 ml-10 mr-10">
 
@@ -21,21 +50,22 @@ const Join = () => {
          </div>
 
 {/* ---------------------------------------------------- */}
-
+<form onSubmit={join} >
           <div className=" flex justify-center mt-5">
              
              <div className=" flex-col md:flex-row lg:flex-row">
-
+                
+              
               <div>
                 <p className=" text-2xl font-serif">Full Name</p>
-                <input placeholder="Your Name" className=" p-1 mt-2 h-[50px] w-[350px]" type="text" />
+                <input ref={nameRef} placeholder="Your Name" className=" p-1 mt-2 h-[50px] w-[350px]" type="text" />
                 <p className=" h-[1px] w-[350px] bg-slate-500"></p>
               </div>
 
 
               <div className=" mt-5">
                 <p className=" text-2xl font-serif">Your Email</p>
-                <input  placeholder="Your Email" className=" p-1 mt-2 h-[50px] w-[350px]" type="email" name="email" id="" />
+                <input ref={emailRef}  placeholder="Your Email" className=" p-1 mt-2 h-[50px] w-[350px]" type="email" name="email" id="" />
                 <p className=" h-[1px] w-[350px] bg-slate-500"></p>
               </div>
 
@@ -53,22 +83,21 @@ const Join = () => {
               <h1 className=" text-xl font-serif">Gender</h1>
             </div>
             <div className=" flex items-center gap-3">
-              <input className=" border-[1px] border-black" type="checkbox" name="box" id="" />
+              <input ref={malRef} className=" border-[1px] border-black" type="checkbox" name="box" id="" />
               <p  className=" text-xl font-serif" >Male</p> 
             </div>
             <div className=" flex items-center gap-3">
-              <input className=" border-[1px] border-black" type="checkbox" name="box" id="" />
+              <input ref={FemaleRef} className=" border-[1px] border-black" type="checkbox" name="box" id="" />
               <p  className=" text-xl font-serif" >Female</p> 
             </div>
             </div>
             </div>
 
-{/* --------------------------------------------------------------- */}
 
             <div className=" flex-col md:flex-row lg:flex-row mt-5 flex justify-center">
 
             <div>
-              <input placeholder="Date Of Birth" className=" p-1 mt-2 h-[50px] w-[350px]" type="date" name="date" id="" />
+              <input ref={dateRef} placeholder="Date Of Birth" className=" p-1 mt-2 h-[50px] w-[350px]" type="date" name="date" id="" />
               <p className=" h-[1px] w-[350px] bg-slate-500"></p>
             </div>
 
@@ -77,12 +106,26 @@ const Join = () => {
             
             <div>
             <div className=" flex-col md:flex-row lg:flex-row flex justify-center mt-5">
-              <input className=" btn bg-black text-white p-1 mt-2 h-[50px] w-[350px]" type="submit" value="Join Now Free" />
-            </div>
+              <input onClick={()=>document.getElementById('my_modal_1').showModal()} className=" btn bg-black text-white p-1 mt-2 h-[50px] w-[350px]" type="submit" value="Join Now Free" />
+
+              <dialog id="my_modal_1" className="modal">
+              <div className="modal-box">
+                <div className=" flex justify-center items-center  gap-5">
+				         	<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
+				         	<h1 className=" text-4xl font-serif text-black ">Join Free Done</h1>
+				         </div>
+                
+              </div>
+            </dialog>
+
+
 
 
             </div>
+
             
+            </div>
+            </form>
         </div>
         
     </div>
