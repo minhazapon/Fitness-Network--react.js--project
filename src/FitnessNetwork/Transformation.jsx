@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-
+import Marquee from "react-fast-marquee";
 
 
 const Transformation = () => {
@@ -9,8 +9,11 @@ const Transformation = () => {
 
             <div>
              
+            <Marquee>
 
              <div className=" bg-yellow-50 p-5  flex-col md:flex-row lg:flex-row flex justify-center items-center  gap-52">
+
+            
               <h1 className=" text-5xl font-serif"><span className=" text-yellow-400">Transformation</span> Speak<br></br> Louder Than Word </h1>
 
                     <Link to="/cv" >
@@ -27,10 +30,14 @@ const Transformation = () => {
 
 
                     </Link>
+          
+              
                     
                 
             
              </div>
+
+             </Marquee>
 
 
 

@@ -1,6 +1,8 @@
 
 
 
+import Marquee from "react-fast-marquee";
+
 
 const Partner = () => {
     return (
@@ -9,9 +11,13 @@ const Partner = () => {
 
             <div>
 
+             <Marquee>
              <div className=" bg-yellow-50 p-3">
                <h1 className=" text-6xl font-serif">Why <span className=" text-yellow-400">Fitness Network</span> Is Your<br></br> Ideal Fitness partner</h1>
              </div>
+             </Marquee>
+
+            
 
             
             <div className=" flex-col md:flex-row lg:flex-row mt-10 flex justify-center items-center  gap-56 ">

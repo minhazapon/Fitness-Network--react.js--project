@@ -22,7 +22,7 @@ const Banner = () => {
                  
                  >
 
-                    <div className=" flex-col md:flex-row lg:flex-row bg-gradient-to-r from-black  p-10 text-white">
+                    <div className=" animate__animated animate__flip animate__repeat-2 flex-col md:flex-row lg:flex-row bg-gradient-to-r from-black  p-10 text-white">
                     <h1 className=" text-5xl font-serif ">Fitness</h1>
                     <img className=" h-[100px]" src="https://i.ibb.co/yP6B98t/gym.png" alt="" />
                     <p className=" text-5xl font-serif mt-10">WelCome To Fitness Network</p>

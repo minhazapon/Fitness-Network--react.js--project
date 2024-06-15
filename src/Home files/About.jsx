@@ -10,7 +10,7 @@ const About = () => {
             <div className=" flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10">
 
 
-              <div className=" flex-col md:flex-row lg:flex-row">
+              <div className="  animate__animated animate__bounceInLeft  animate__repeat-2    flex-col md:flex-row lg:flex-row">
                  <h1 className=" text-6xl font-serif">About Us</h1>
                  <p className=" mt-5 text-3xl font-serif">Fitness Center Information</p>
                  <p className=" text-xl text-slate-500 mt-5">Gyms are facilities equipped with a variety of exercise<br></br> equipment and amenities designed to help <br></br>individuals improve their fitness,<br></br> strength, flexibility, and overall health. They cater <br></br>to a wide range of fitness levels and goals,<br></br> from beginner to advanced athletes. Here’s <br></br>an in-depth look at what gyms typically <br></br> offer and how to make the most of your gym experience</p>
@@ -41,7 +41,7 @@ const About = () => {
                
                <div className=" flex-col md:flex-row lg:flex-row    mt-48">
 
-                <div className=" bg-black text-white w-[280px] p-5 ">
+                <div className="  animate__animated animate__bounceInDown  animate__repeat-2  bg-black text-white w-[280px] p-5 ">
                   <div className="  bg-yellow-300 w-[70px] p-3 ">
                   <img className=" h-[50px]" src="https://i.ibb.co/P4szmf9/exercise.png" alt="" />
                   </div>
@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
 
-                <div className=" mt-5 bg-black text-white w-[280px] p-5 ">
+                <div className="  animate__animated animate__bounceInLeft  animate__repeat-2 mt-5 bg-black text-white w-[280px] p-5 ">
                   <div className="  bg-yellow-300 w-[70px] p-3 ">
                   <img className=" h-[50px]" src="https://i.ibb.co/V2BCY0s/report.png" alt="" />
                   </div>
@@ -66,7 +66,7 @@ const About = () => {
 
                <div className=" flex-col md:flex-row lg:flex-row">
 
-               <div className=" bg-black text-white w-[280px] p-5 ">
+               <div className=" animate__animated animate__bounceInUp  animate__repeat-2 bg-black text-white w-[280px] p-5 ">
                  <div className="  bg-yellow-300 w-[70px] p-3 ">
                  <img className=" h-[50px]" src="https://i.ibb.co/nDj2h9t/running-1.png" alt="" />
                  </div>
@@ -75,7 +75,7 @@ const About = () => {
                </div>
                
                
-               <div className=" mt-5 bg-black text-white w-[280px] p-5 ">
+               <div className="  animate__animated animate__bounceInRight  animate__repeat-2 mt-5 bg-black text-white w-[280px] p-5 ">
                  <div className="  bg-yellow-300 w-[70px] p-3 ">
                  <img className=" h-[50px]" src="https://i.ibb.co/ft7dWDv/grippers.png" alt="" />
                  </div>

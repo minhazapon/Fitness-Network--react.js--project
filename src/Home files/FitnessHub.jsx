@@ -1,5 +1,5 @@
 
-
+import Marquee from "react-fast-marquee";
 
 
 
@@ -8,12 +8,16 @@ const FitnessHub = () => {
         <div className=" mb-10 mt-20 ml-10 mr-10">
 
             <div>
-              
+               
 
-              <div className=" text-center">
+            <Marquee>
+            <div className=" text-center">
                 <p className=" text-6xl font-serif">Fitness Hub</p>
                 <p className=" text-xl  text-slate-500">“Exercise should be regarded as tribute to the heart.” —Gene Tunney</p>
               </div>
+            </Marquee>
+
+              
              
 
               

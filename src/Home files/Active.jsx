@@ -4,9 +4,9 @@ const Active = () => {
     return (
         <div className=" mb-10 mt-28 ml-10 mr-10">
 
-            <div  className=" flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10">
+            <div  className="  flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10">
 
-             <div className=" flex-col md:flex-row lg:flex-row">
+             <div className=" animate__animated animate__lightSpeedInLeft  animate__repeat-2 flex-col md:flex-row lg:flex-row">
                 <h1 className=" text-5xl font-serif">Get active,<br></br> wherever you want</h1>
                 <h1 className=" text-5xl font-serif mt-10 ">01. On-site classes</h1>
                 <p className=" mt-5 text-xl text-slate-500">Spinning/Cycling: High-intensity cycling<br></br> workouts on stationary bikes.<br></br>
@@ -22,7 +22,7 @@ const Active = () => {
 
              </div>
 
-             <div className=" flex-col md:flex-row lg:flex-row ">
+             <div className=" animate__animated animate__lightSpeedInRight  animate__repeat-2 flex-col md:flex-row lg:flex-row ">
                 <img className=" border-[5px] border-yellow-400 rounded-full  h-[400px] w-[400px]" src="https://img.freepik.com/free-photo/powerful-stylish-bodybuilder-with-tattoo-his-arm-doing-exercises-with-dumbbells-isolated-dark-background_613910-5209.jpg?t=st=1717430930~exp=1717434530~hmac=804969c38ce7f4dd6d79191b725d18e9fe80c5a16e284c056233a6d798d0ff20&w=740" alt="" />
              </div>
 

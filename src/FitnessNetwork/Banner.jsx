@@ -28,9 +28,9 @@ const Banner = () => {
 
             <div>
 
-            <div className="hero min-h-screen" style={{backgroundImage: 'url(    https://img.freepik.com/premium-photo/strong-confident-man-standing-gym-athletic-young-workout-sportsman_116317-23937.jpg?w=740      )'}}>
+            <div className="hero min-h-screen  bg-fixed " style={{backgroundImage: 'url(    https://img.freepik.com/premium-photo/strong-confident-man-standing-gym-athletic-young-workout-sportsman_116317-23937.jpg?w=740      )'}}>
               <div className=" bg-opacity-60"></div>
-              <div className=" text-center text-neutral-content">
+              <div className=" animate__animated animate__flip animate__repeat-2 text-center text-neutral-content">
               <div className=" flex-col md:flex-row lg:flex-row text-white bg-gradient-to-r from-black  p-10">
                <h1 className=" text-6xl font-serif">ACHIEVE MORE<br></br> THAN JUST FITNESS</h1>
                <p className=" mt-5 text-xl font-serif">"The pain you feel today will be the strength you feel tomorrow."</p>

@@ -4,7 +4,7 @@
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-
+  import Marquee from "react-fast-marquee";
 
 const Flexible = () => {
 
@@ -24,11 +24,15 @@ const Flexible = () => {
 
             <div>
 
+              
 
-              <div className=" bg-yellow-50 p-3 text-center">
+			<Marquee>
+			<div className=" bg-yellow-50 p-3 text-center">
                 <h1 className=" text-6xl font-serif"><span className=" text-yellow-400">Flexible</span> Plan For Every Budget</h1>
                 <p className=" mt-5 text-slate-500 text-xl">"Your body can stand almost anything. It’s your mind that you have to convince."</p>
               </div>
+            </Marquee>
+              
 
 
 {/* -------------------------------------------------------------- */}
@@ -40,7 +44,10 @@ const Flexible = () => {
 	<div className="container text-white px-4 mx-auto">
 		
 		<div className="flex flex-wrap items-stretch -mx-4">
-			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+
+
+
+			<div className="   animate__animated animate__flip animate__repeat-2              flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
 				<div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-black text-white">
 					<div className="space-y-2 ">
 						<h4 className="text-5xl font-serif">Fitness Plan</h4>
@@ -67,7 +74,12 @@ const Flexible = () => {
 					<ToastContainer />
 				</div>
 			</div>
-			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+
+
+
+
+
+			<div className="  animate__animated animate__flip animate__repeat-2    flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
 				<div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-black text-white">
                 <div className="space-y-2">
 						<h4 className="text-5xl font-serif">Fitness Plan</h4>
@@ -98,7 +110,11 @@ const Flexible = () => {
 					<ToastContainer />
 				</div>
 			</div>
-			<div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+
+
+
+
+			<div className="  animate__animated animate__flip animate__repeat-2   flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
 				<div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-black text-white">
                 <div className="space-y-2">
 						<h4 className="text-5xl font-serif">Fitness Plan</h4>
@@ -138,6 +154,10 @@ const Flexible = () => {
 
 									</div>
 			</div>
+
+
+
+
 		</div>
 	</div>
 </section>

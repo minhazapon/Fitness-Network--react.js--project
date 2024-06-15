@@ -10,7 +10,7 @@ const Clients = () => {
 
                  <div  className="  flex-col md:flex-row lg:flex-row flex  justify-center items-center gap-10">
  
-                 <div className=" border-[1px]   border-b-slate-500 bg-black text-white rounded-xl  p-2">
+                 <div className="  animate__animated animate__slideInLeft animate__repeat-2  border-[1px]   border-b-slate-500 bg-black text-white rounded-xl  p-2">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="  https://img.freepik.com/premium-photo/muscular-african-american-young-man-gym-showing-muscles-fitness-model-trains-gym_641698-1812.jpg?w=740  " className=" w-[200px] h-[300px] rounded-lg shadow-2xl" />
                     <div>
@@ -30,7 +30,7 @@ const Clients = () => {
 
 
 
-                 <div className="border-[1px] flex-col md:flex-row lg:flex-row  border-b-slate-500 bg-black text-white rounded-xl  p-2">
+                 <div className="   animate__animated animate__slideInRight animate__repeat-2   border-[1px] flex-col md:flex-row lg:flex-row  border-b-slate-500 bg-black text-white rounded-xl  p-2">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src="  https://img.freepik.com/premium-photo/portrait-bodybuilder-with-dumbbells-his-arms-grey-backg_136403-519.jpg?w=360  " className="w-[200px] h-[300px] rounded-lg shadow-2xl" />
                     <div>

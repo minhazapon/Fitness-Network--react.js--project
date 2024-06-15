@@ -8,12 +8,12 @@ const Information = () => {
             <div className=" flex-col md:flex-row lg:flex-row flex justify-center gap-20">
 
                 <div className="  flex-col md:flex-row lg:flex-row">
-                   <img className=" h-[300px] w-[400px] rounded-lg" src="https://img.freepik.com/premium-photo/athletic-man-doing-bent-row-muscles_754108-1006.jpg?w=740" alt="" />
-                   <img className=" mt-10 h-[300px] w-[400px] rounded-lg" src="  https://img.freepik.com/premium-photo/body-builder-workout-gym-performing-cross-exercise-chest-muscles_754108-1155.jpg?w=740  " alt="" />
+                   <img className="  animate__animated animate__rotateIn   animate__repeat-2   h-[300px] w-[400px] rounded-lg" src="https://img.freepik.com/premium-photo/athletic-man-doing-bent-row-muscles_754108-1006.jpg?w=740" alt="" />
+                   <img className="  animate__animated animate__rotateIn   animate__repeat-2 mt-10 h-[300px] w-[400px] rounded-lg" src="  https://img.freepik.com/premium-photo/body-builder-workout-gym-performing-cross-exercise-chest-muscles_754108-1155.jpg?w=740  " alt="" />
                 </div>
 
 
-                <div className=" flex-col md:flex-row lg:flex-row " >
+                <div className="  animate__animated animate__zoomInDown  animate__repeat-2     flex-col md:flex-row lg:flex-row " >
 
                   <div className=" flex-col md:flex-row lg:flex-row">
                     <h1 className=" text-5xl font-serif ">We can't wait to see you<br></br> at our gym!</h1>

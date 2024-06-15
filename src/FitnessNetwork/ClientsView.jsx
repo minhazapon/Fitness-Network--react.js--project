@@ -13,7 +13,7 @@ const ClientsView = () => {
 
 
 
-                <div className=" border-[1px]  border-b-slate-500 bg-black text-white rounded-xl  p-2">
+                <div className="     border-[1px]  border-b-slate-500 bg-black text-white rounded-xl  p-2">
                   <div className="hero-content flex-col lg:flex-row">
                     <img src=" https://img.freepik.com/premium-photo/man-gym_812426-301811.jpg?w=740  " className=" w-[200px] h-[300px] rounded-lg shadow-2xl" />
                     <div>

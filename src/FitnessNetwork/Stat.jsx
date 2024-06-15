@@ -10,7 +10,7 @@ const Stat = () => {
 
 
 
-            <div className="stats shadow bg-black text-white ">
+            <div className="  animate__animated animate__rotateIn animate__repeat-2      stats shadow bg-black text-white ">
   
   <div className="stat text-white ">
     <div className="stat-figure text-primary">

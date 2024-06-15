@@ -7,6 +7,8 @@ import { useEffect, useState } from 'react'
 
 import 'animate.css';
 
+import MovingText from 'react-moving-text'
+
 
 const Nav = () => {
 
@@ -91,7 +93,21 @@ useEffect(() => {
      <div className=" flex items-center gap-2">
        
      <img className=" animate__animated animate__lightSpeedInLeft  animate__repeat-2 h-[50px]" src="https://i.ibb.co/mBQWDSX/running.png" alt="" />
-    <a className=" text-2xl  font-serif ">Fitness <span className=" text-yellow-400">Network</span></a>
+             
+             
+      <MovingText
+        type="swing"
+        duration="1000ms"
+        delay="0s"
+        direction="normal"
+        timing="ease"
+        iteration="5"
+        fillMode="none">
+       <a className=" text-2xl  font-serif ">Fitness <span className=" text-yellow-400">Network</span></a>
+      </MovingText>
+           
+            
+    
 
      </div>
     

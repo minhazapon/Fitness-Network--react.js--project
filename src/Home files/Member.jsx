@@ -11,7 +11,7 @@ const Member = () => {
              <div className=" flex-col md:flex-row lg:flex-row flex justify-center items-center gap-10 ">
 
 
-             <div className="  flex-col md:flex-row lg:flex-row  bg-yellow-300   p-16">
+             <div className="    animate__animated animate__lightSpeedInLeft animate__repeat-2   flex-col md:flex-row lg:flex-row  bg-yellow-300   p-16">
                 <p className=" text-5xl font-serif">Membership<br></br>
                  With Benefits</p>
                    
@@ -36,7 +36,7 @@ const Member = () => {
                    
 
             </div>
-            <div className=" flex-col md:flex-row lg:flex-row  ">
+            <div className=" animate__animated animate__lightSpeedInRight animate__repeat-2 flex-col md:flex-row lg:flex-row  ">
                 <img className="   h-[350px] w-[550px]" src="https://img.freepik.com/premium-photo/group-young-sporty-people-sitting-lotus-pose_762785-168368.jpg?w=740" alt="" />
             </div>
                 

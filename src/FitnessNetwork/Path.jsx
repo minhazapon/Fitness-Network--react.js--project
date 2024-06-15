@@ -1,6 +1,6 @@
 
 
-
+import Marquee from "react-fast-marquee";
 
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
@@ -35,7 +35,11 @@ const Path = () => {
 
              <div className=" bg-black p-10">
 
-                <h1 className="  text-yellow-400 text-6xl font-serif text-center">Choose Your Path To Fitness</h1>
+             <Marquee>
+             <h1 className="  text-yellow-400 text-6xl font-serif text-center">Choose Your Path To Fitness</h1>
+             </Marquee>
+
+                
              </div>
 
              </div>

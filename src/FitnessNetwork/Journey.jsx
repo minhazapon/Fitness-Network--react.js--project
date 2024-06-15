@@ -10,7 +10,7 @@ const Journey = () => {
 
             
 
-            <div className=" flex justify-end bg-no-repeat bg-cover  p-36 text-white "
+            <div className=" flex justify-end bg-no-repeat bg-cover  p-36 text-white bg-fixed "
              
              style={{backgroundImage: 'url(  https://img.freepik.com/premium-photo/silhouette-man-boxing_23-2148024354.jpg?w=740  )'}}
             

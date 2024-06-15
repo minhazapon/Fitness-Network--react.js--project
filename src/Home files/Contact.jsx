@@ -29,7 +29,7 @@ const Contact = () => {
                 <h1 className=" text-center text-6xl font-serif mb-10">Contact US</h1>
             </div>
 
-            <div>
+            <div className="  animate__animated animate__fadeInLeftBig animate__repeat-2     ">
 
             <section className="py-6  bg-black  text-white">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
