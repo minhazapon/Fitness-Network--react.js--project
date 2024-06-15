@@ -31,7 +31,7 @@ const Review = () => {
 	<div className="flex justify-between p-4">
 		<div className="flex space-x-4">
 			<div>
-				<img src="https://source.unsplash.com/100x100/?portrait" alt="" className="object-cover w-12 h-12 rounded-full bg-gray-500" />
+				<img src="   https://img.freepik.com/free-photo/bodybuilder-training-back-exercise-machine_7502-4757.jpg?t=st=1718447073~exp=1718450673~hmac=a5059612fbcfc5c09276ec3187ff7843302287f84c1fab9c7dee8e7be21d786e&w=740  " alt="" className="object-cover w-12 h-12 rounded-full bg-gray-500" />
 			</div>
 			<div>
 				<h4 className="font-bold">Thomas john</h4>

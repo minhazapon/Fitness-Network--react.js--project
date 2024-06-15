@@ -30,7 +30,7 @@ const ProductsBanner = () => {
 
                     <div className=" flex-col md:flex-row lg:flex-row bg-gradient-to-r from-black  p-10 text-white">
                     <h1 className=" text-5xl font-serif ">Products Zone</h1>
-                    <img className=" h-[100px]" src="https://i.ibb.co/gjt8m6p/product.png" alt="" />
+                    <img className="  animate__animated  animate__bounceInDown animate__repeat-2    h-[100px]" src="https://i.ibb.co/gjt8m6p/product.png" alt="" />
                     <p className=" text-5xl font-serif mt-10">WelCome To Fitness Network Products Zone</p>
                    
                     </div>

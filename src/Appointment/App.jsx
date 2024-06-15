@@ -75,14 +75,14 @@ const App = () => {
 
 
              <div className="    mb-24 mt-3  flex-col md:flex-row lg:flex-row flex items-center gap-3">
-               <img className=" h-[100px]" src="https://i.ibb.co/ZX0LJCS/schedule-1.png" alt="" />
-               <img className=" h-[100px]" src="https://i.ibb.co/3BT9bvC/back-in-time.png" alt="" />
-               <img className=" h-[100px]" src="https://i.ibb.co/zHztQKQ/application.png" alt="" />
-               <img className=" h-[100px]" src="https://i.ibb.co/44BZhpf/chat-bubble.png" alt="" />
+               <img className="  animate__animated  animate__bounceInDown animate__repeat-2    h-[100px]" src="https://i.ibb.co/ZX0LJCS/schedule-1.png" alt="" />
+               <img className="  animate__animated  animate__bounceInLeft animate__repeat-2 h-[100px]" src="https://i.ibb.co/3BT9bvC/back-in-time.png" alt="" />
+               <img className="  animate__animated  animate__bounceInRight animate__repeat-2 h-[100px]" src="https://i.ibb.co/zHztQKQ/application.png" alt="" />
+               <img className="  animate__animated  animate__bounceInUp animate__repeat-2 h-[100px]" src="https://i.ibb.co/44BZhpf/chat-bubble.png" alt="" />
              </div>
 
 
-             <div className="   flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
+             <div className="  animate__animated  animate__bounceInRight animate__repeat-2  flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
 
                 <form onSubmit={appointment} >
 

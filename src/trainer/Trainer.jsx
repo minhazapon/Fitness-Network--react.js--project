@@ -22,7 +22,7 @@ const Trainer = () => {
 
 
 
-            <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+            <div className="  animate__animated  animate__jackInTheBox animate__repeat-2  border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/robust-instructor-leads-dumbbell-training-karate-gym-generative-ia_209190-46217.jpg?w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Alex Thompson</h1>
                 <p className=" text-slate-400 ">Strength Training Specialist</p>
@@ -75,7 +75,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/free-photo/one-athletic-man-exercising-outdoors-confident-determined-generated-by-artificial-intelligence_188544-130258.jpg?t=st=1718167864~exp=1718171464~hmac=d73045b5f8c1b2e4b5372c8fb91f51288ea186fc926956a3c72e309610aa4643&w=826" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Casey Rivera</h1>
                 <p className=" text-slate-400 ">Cardiovascular Training Specialist</p>
@@ -125,7 +125,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/free-photo/portrait-indigenous-person-integrated-into-modern-life_23-2151102539.jpg?t=st=1718167941~exp=1718171541~hmac=76c751fe493fd09579d4800ae5a346e0679b4865d2f53a22208c8ab75be109f1&w=826" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Jamie Parker</h1>
                 <p className=" text-slate-400 ">Flexibility and Mobility Training Specialist</p>
@@ -175,7 +175,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/free-photo/medium-shot-man-with-braids-portrait_23-2151428153.jpg?t=st=1718168006~exp=1718171606~hmac=af1b78c476b9ba0f26b4c7c4fe6b47381d5b4394bd528fc56f3176a559b81f7c&w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Taylor Brooks</h1>
                 <p className=" text-slate-400 ">Endurance Training Specialist</p>
@@ -225,7 +225,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/man-gym_812426-296554.jpg?w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Jordan Lee</h1>
                 <p className=" text-slate-400 ">Sports-Specific Training Specialist</p>
@@ -274,8 +274,8 @@ const Trainer = () => {
 
 
 
-
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+ 
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/high-definition-photographic-creative-image-spartan_993236-28139.jpg?w=826" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Riley Morgan</h1>
                 <p className=" text-slate-400 ">Rehabilitation and Recovery Specialist</p>
@@ -324,7 +324,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/man-gym_812426-301744.jpg?w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Avery Reed</h1>
                 <p className=" text-slate-400 ">Functional Training Specialist</p>
@@ -373,7 +373,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2 border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/crossfit-athlete-raises-weights-intense-environment-generative-ia_209190-91447.jpg?w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Quinn Turner</h1>
                 <p className=" text-slate-400 ">Group Fitness Classes Specialist</p>
@@ -422,7 +422,7 @@ const Trainer = () => {
 
 
 
-               <div className=" border-[1px]  border-b-slate-500   rounded-xl p-5 ">
+               <div className="  animate__animated  animate__jackInTheBox animate__repeat-2   border-[1px]  border-b-slate-500   rounded-xl p-5 ">
                  <img className=" h-[200px] w-[300px] rounded-xl" src="https://img.freepik.com/premium-photo/bodybuilder-intense-gym-training-generative-ia_209190-91808.jpg?w=740" alt="" />
                 <h1 className=" text-xl font-bold mt-3">Devin Cooper</h1>
                 <p className=" text-slate-400 ">Running Training Specialist</p>

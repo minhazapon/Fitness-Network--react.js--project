@@ -23,7 +23,7 @@ const Reasonable = () => {
 
           <div className=" grid   md:grid-cols-2 gap-10">
 
-          <div className=" flex items-center gap-10 border-[1px] border-blue-500  p-5 rounded-xl">
+          <div className="  animate__animated  animate__rotateIn animate__repeat-2    flex items-center gap-10 border-[1px] border-blue-500  p-5 rounded-xl">
            <div>
             <h1 className=" text-2xl font-serif">Basic Membership</h1>
             <p className=" text-xl text-slate-500">Gym packages can vary<br></br> widely depending on the gym and its offerings</p>
@@ -37,7 +37,7 @@ const Reasonable = () => {
 
 
 
-         <div className=" flex items-center gap-10 border-[1px]  border-blue-500  p-5 rounded-xl">
+         <div className="  animate__animated  animate__rotateIn animate__repeat-2 flex items-center gap-10 border-[1px]  border-blue-500  p-5 rounded-xl">
            <div>
             <h1 className=" text-2xl font-serif"> Premium Membership</h1>
             <p className=" text-xl text-slate-500">Gym packages can vary<br></br> widely depending on the gym and its offerings</p>
@@ -50,7 +50,7 @@ const Reasonable = () => {
 
 
 
-         <div className=" flex items-center gap-10  border-[1px] border-blue-500  p-5 rounded-xl">
+         <div className="  animate__animated  animate__rotateIn animate__repeat-2 flex items-center gap-10  border-[1px] border-blue-500  p-5 rounded-xl">
            <div>
             <h1 className=" text-2xl font-serif">Corporate Membership</h1>
             <p className=" text-xl text-slate-500">Gym packages can vary<br></br> widely depending on the gym and its offerings</p>
@@ -63,7 +63,7 @@ const Reasonable = () => {
 
 
 
-         <div className=" flex items-center gap-10   border-[1px] border-blue-500  p-5 rounded-xl">
+         <div className="  animate__animated  animate__rotateIn animate__repeat-2 flex items-center gap-10   border-[1px] border-blue-500  p-5 rounded-xl">
            <div>
             <h1 className=" text-2xl font-serif">Virtual Membership</h1>
             <p className=" text-xl text-slate-500">Gym packages can vary<br></br> widely depending on the gym and its offerings</p>

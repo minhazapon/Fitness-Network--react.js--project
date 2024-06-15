@@ -15,7 +15,7 @@ const AminoDetails = ({amino}) => {
         <div>
 
 
-            <div className="card w-96 h-[550px] text-white  bg-black shadow-xl border-[3px]  border-yellow-400 ">
+            <div className="  transition duration-300 ease-in-out hover:scale-110  card w-96 h-[550px] text-white  bg-black shadow-xl border-[3px]  border-yellow-400 ">
                <figure className="px-10 pt-10">
                <img src={image} alt="Shoes" className="rounded-xl h-[200px] w-[300px] " />
               </figure>

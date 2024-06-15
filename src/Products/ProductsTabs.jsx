@@ -8,6 +8,8 @@ import Work from './Work';
 import Amino from './Amino';
 import Creatine from './Creatine';
 
+import Marquee from "react-fast-marquee";
+
 
 
 const ProductsTabs = () => {
@@ -16,7 +18,11 @@ const ProductsTabs = () => {
 
             <div className=' flex-col md:flex-row lg:flex-row'>
 
-                <h1 className=' text-5xl font-serif mb-10 text-center bg-yellow-400 p-4  rounded-xl'> Supplements Products</h1>
+            <Marquee>
+            <h1 className=' text-5xl font-serif mb-10 text-center bg-yellow-400 p-4  rounded-xl'> Supplements Products</h1>
+            </Marquee>
+
+                
 
 
 

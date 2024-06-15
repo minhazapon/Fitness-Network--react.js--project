@@ -39,7 +39,7 @@ const SignUp = () => {
             <div className=" flex justify-center">
                 
 
-            <div className="w-full max-w-md p-8 space-y-3 rounded-xl  bg-black text-gray-100">
+            <div className=" animate__animated   animate__flip animate__repeat-2 w-full max-w-md p-8 space-y-3 rounded-xl  bg-black text-gray-100">
 
 
     <div className=" flex justify-center items-center gap-5">
