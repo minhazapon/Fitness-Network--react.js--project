@@ -47,6 +47,8 @@ import B3 from './servic/B3';
 import Read1 from './Blog/Read1';
 import Read2 from './Blog/Read2';
 import Read3 from './Blog/Read3';
+import AuthContext from './firebase/AuthContext';
+import PrivateRoute from './firebase/PrivateRoute';
 
 
 
@@ -191,7 +193,7 @@ const router = createBrowserRouter([
      
       {
         path: "/dash",
-        element:   <Dash></Dash> ,
+        element:  <PrivateRoute>  <Dash></Dash> </PrivateRoute>  ,
         children: [
           {
             path: "info",
@@ -227,6 +229,13 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+      
+    <AuthContext>
+     
     <RouterProvider router={router} />
+
+    </AuthContext>
+
+    
   </React.StrictMode>,
 )

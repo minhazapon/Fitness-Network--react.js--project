@@ -1,30 +1,32 @@
-import { useRef } from "react";
-
-
-
+import { useContext } from "react";
+import { fireContext } from "../firebase/AuthContext";
 
 
 
 
 const SignUp = () => {
 
-    const nameRef = useRef( null);
-	const emailRef = useRef(null);
-	const numberRef = useRef(null)
-	const passRef = useRef(null)
+	const {createUser} = useContext(fireContext)
 
-    const sign = e => {
+    
+    const handleUp = e =>{
+    
+		e.preventDefault()
+		const email = e.target.email.value
+		const password = e.target.password.value
+		console.log(email, password)
 
-       e.preventDefault();
-	   console.log(nameRef.current.value)
-	   console.log(emailRef.current.value)
-	   console.log(numberRef.current.value)
-	   console.log(passRef.current.value)
+        createUser(email, password)
+		.then( result =>{
+			console.log(result.user)
+		})
+		.catch( error =>{
+			console.error(error)
+		})
 
 
 
 	}
-
 
 
 
@@ -50,52 +52,25 @@ const SignUp = () => {
     
 
 
-	<form  onSubmit={sign} action="" className="space-y-6">
-		<div className="space-y-1 text-sm">
-			<label htmlFor="username" className="block text-gray-400">Username</label>
-			<input ref={nameRef} type="text" name="username" id="username" placeholder="Username" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-gray-100 focus:border-violet-400" />
-		</div>
-
-
-
+	<form onSubmit={handleUp}  className="space-y-6">
+		
 		<div className="space-y-1 text-sm">
 			<label htmlFor="username" className="block text-gray-400">Email</label>
-            <input ref={emailRef} placeholder="Email" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-gray-100 focus:border-violet-400" type="email" name="email" id="" />
+            <input  placeholder="Email" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" type="email" name="email" id="" />
 		</div>
-
-
-		<div className="space-y-1 text-sm">
-			<label htmlFor="username" className="block text-gray-400">Number</label>
-
-            <input ref={numberRef} placeholder="Number" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" type="number" name="number" id="" />
-		</div>
-
-
-
-
 
 		<div className="space-y-1 text-sm">
 			<label htmlFor="password" className="block text-gray-400">Password</label>
-			<input ref={passRef} type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
-			
+			<input  type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md border-gray-700 bg-white text-black focus:border-violet-400" />
 		</div>
 		
+		<input  className="block w-full p-3 text-center rounded-sm text-gray-900 bg-white btn  " type="submit" value="Sign Up" />
 
-          
-		<input onClick={()=>document.getElementById('my_modal_1').showModal()} className="block w-full p-3 text-center rounded-sm text-gray-900 bg-white btn  " type="submit" value="Sign Up" />
-
-        <dialog id="my_modal_1" className="modal">
-        <div className="modal-box">
-        <div className=" flex justify-center items-center  gap-5">
-        <img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
-        <h1 className=" text-4xl font-serif text-black ">Sign Up Done</h1>
-        </div>  
-        </div>
-        </dialog>
-
-
+       
 
 	</form>
+
+
 	<div className="flex items-center pt-4 space-x-1">
 		<div className="flex-1 h-px sm:w-16 bg-gray-700"></div>
 		<p className="px-3 text-sm text-gray-400">Sign Up with social accounts</p>

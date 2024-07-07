@@ -1,16 +1,32 @@
 import { Link, NavLink } from "react-router-dom";
 
 // ---------------theme
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 // -----------------------------------------
 
 
 import 'animate.css';
 
 import MovingText from 'react-moving-text'
+import { fireContext } from "./firebase/AuthContext";
 
 
 const Nav = () => {
+
+
+    const {user, logOut} = useContext(fireContext)
+
+    const handleOut = () => {
+      logOut()
+      .then(() => console.log('logOut successfully'))
+      .catch( error => 
+        console.error(error)
+      )
+    
+     }
+
+
+
 
 
   
@@ -67,7 +83,7 @@ useEffect(() => {
       <li><NavLink to="/dash" >Dashboard</NavLink></li>
       </div>
        
-       
+  
        
        
      
@@ -136,21 +152,48 @@ useEffect(() => {
     
     </label>
     {/* ------------------------------------                      */}
+    
+
+
+    { user ? <>
+       
+      <a onClick={handleOut} href="#_" className="relative  inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
+      <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </span>
+      <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">SignOut</span>
+      <span className="relative invisible">SignOut</span>
+      </a>
+    
+    </>:
 
     <Link to="/login">
+    <div>
+    <a href="#_" className="relative  inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
+    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </span>
+    <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">login</span>
+    <span className="relative invisible">login</span>
+    </a>
+    </div></Link>   
 
-                    <div>
-                    <a href="#_" className="relative  inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
-                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-black group-hover:translate-x-0 ease">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                    </span>
-                    <span className="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">login</span>
-                    <span className="relative invisible">login</span>
-                    </a>
-                    </div>
 
-    {/* <a className="btn bg-black text-white "></a> */}
-    </Link>
+
+    }
+    
+     
+
+
+ 
+
+
+
+
+
+
+
+                   
 
     
   </div>
