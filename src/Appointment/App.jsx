@@ -38,7 +38,7 @@ const App = () => {
    
 
     return (
-        <div className=" mb-10 mt-10 ml-10 mr-10">
+        <div className="  mb-10 mt-10 ml-10 mr-10">
 
             <div className=" flex-col md:flex-row lg:flex-row">
 
@@ -46,8 +46,8 @@ const App = () => {
 
 
               <div className="  flex-col md:flex-row lg:flex-row bg-black text-white p-10 ">
-               <h1 className="  text-5xl font-serif">Make An<br></br> Appointment</h1>
-               <p className="  text-xl mt-5 font-serif text-slate-500">Setting a gym appointment<br></br> is a great way to stay<br></br> committed to your fitness goals.<br></br> Here's a step-by-step<br></br> guide to help you schedule one</p>
+               <h1 className="  text-5xl font-mono">Make An<br></br> Appointment</h1>
+               <p className="  font-mono text-xl mt-5 font-serif text-slate-500">Setting a gym appointment<br></br> is a great way to stay<br></br> committed to your fitness goals.<br></br> Here's a step-by-step<br></br> guide to help you schedule one</p>
 
                
                 
@@ -88,7 +88,7 @@ const App = () => {
 
                 <form  onSubmit={onSubmit} >
 
-                <h1 className=" text-5xl text-center  mt-5">Its Quick & Easy</h1>
+                <h1 className=" text-4xl text-center font-mono  mt-5">Its Quick & Easy</h1>
 
                 <div className="  flex-col md:flex-row lg:flex-row   mt-5">
                 <div className=" flex-col md:flex-row lg:flex-row flex items-center gap-3">
@@ -116,7 +116,7 @@ const App = () => {
 
                   
                   <div className=" flex justify-center">
-                  <button className=" bg-black text-white w-full btn mt-5" >submit</button>
+                  <button className=" bg-black font-mono text-white w-full btn mt-5" >Submit</button>
                   <ToastContainer />
                   </div>
                 </form>
