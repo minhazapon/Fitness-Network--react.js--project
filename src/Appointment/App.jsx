@@ -1,39 +1,41 @@
 
 import { Link } from "react-router-dom";
 import Date from "./Date";
-import { useRef } from "react";
-
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
 
-    const nam1Ref = useRef(null)
-    const name2Ref = useRef(null)
-    const mesgRef = useRef(null)
-    const dateRef = useRef(null)
-    const coachRef = useRef(null)
+
+  const notifySuccess = () => toast.success(" Submit Successfully ");
+
+  const notifyError= () => toast.error("submit Failed");
 
 
-
-   const appointment = e => {
-
-     e.preventDefault();
-     console.log(nam1Ref.current.value)
-     console.log(name2Ref.current.value)
-     console.log(mesgRef.current.value)
-     console.log(dateRef.current.value)
-     console.log(coachRef.current.value)
-     
-
-
-   }
-
-
-
-
-
+	const onSubmit = async (event) => {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "6626a723-9dad-41ba-8220-fd9dedfeea00");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          notifySuccess()
+          event.target.reset();
+        } else {
+            notifyError()
+          setResult(data.message);
+        }
+      };
+   
 
     return (
         <div className=" mb-10 mt-10 ml-10 mr-10">
@@ -71,42 +73,42 @@ const App = () => {
 {/* ------------------------------------------------------------------ */}
 
 
-            <div className="  flex-col md:flex-row lg:flex-row flex justify-center   gap-36 ">
+               <div className="  flex-col md:flex-row lg:flex-row flex justify-center   gap-36 ">
 
 
-             <div className="    mb-24 mt-3  flex-col md:flex-row lg:flex-row flex items-center gap-3">
-               <img className="  animate__animated  animate__bounceInDown animate__repeat-2    h-[100px]" src="https://i.ibb.co/ZX0LJCS/schedule-1.png" alt="" />
-               <img className="  animate__animated  animate__bounceInLeft animate__repeat-2 h-[100px]" src="https://i.ibb.co/3BT9bvC/back-in-time.png" alt="" />
-               <img className="  animate__animated  animate__bounceInRight animate__repeat-2 h-[100px]" src="https://i.ibb.co/zHztQKQ/application.png" alt="" />
-               <img className="  animate__animated  animate__bounceInUp animate__repeat-2 h-[100px]" src="https://i.ibb.co/44BZhpf/chat-bubble.png" alt="" />
-             </div>
+                <div className="    mb-24 mt-3  flex-col md:flex-row lg:flex-row flex items-center gap-3">
+                  <img className="  animate__animated  animate__bounceInDown animate__repeat-2    h-[100px]" src="https://i.ibb.co/ZX0LJCS/schedule-1.png" alt="" />
+                  <img className="  animate__animated  animate__bounceInLeft animate__repeat-2 h-[100px]" src="https://i.ibb.co/3BT9bvC/back-in-time.png" alt="" />
+                  <img className="  animate__animated  animate__bounceInRight animate__repeat-2 h-[100px]" src="https://i.ibb.co/zHztQKQ/application.png" alt="" />
+                  <img className="  animate__animated  animate__bounceInUp animate__repeat-2 h-[100px]" src="https://i.ibb.co/44BZhpf/chat-bubble.png" alt="" />
+                </div>
 
 
-             <div className="  animate__animated  animate__bounceInRight animate__repeat-2  flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
+               <div className="  animate__animated  animate__bounceInRight animate__repeat-2  flex-col md:flex-row lg:flex-row border-[1px] border-black  bg-white  p-5  rounded-xl  -mt-52 ">
 
-                <form onSubmit={appointment} >
+                <form  onSubmit={onSubmit} >
 
                 <h1 className=" text-5xl text-center  mt-5">Its Quick & Easy</h1>
 
                 <div className="  flex-col md:flex-row lg:flex-row   mt-5">
                 <div className=" flex-col md:flex-row lg:flex-row flex items-center gap-3">
-                <input ref={nam1Ref} placeholder="First Name" className=" p-1   border-[1px] border-black" type="text" />
-                <input ref={name2Ref} placeholder="Last Name" className="  p-1   border-[1px] border-black" type="text" />
+                <input placeholder="First Name" required name="FirstName" className=" p-1   border-[1px] border-black" type="text" />
+                <input placeholder="Last Name"  required name="lastName" className="  p-1   border-[1px] border-black" type="text" />
                 </div>  
                 <div className=" flex-col md:flex-row lg:flex-row mt-2">
                      {/* <textarea placeholder=" Message" className=" border-[1px] border-black w-[395px]   h-[150px] " name="" id=""></textarea> */}
 
 
                 <label className="block">
-				<textarea ref={mesgRef} rows="3"  placeholder="Message" className="block border-[1px] p-2 border-black  h-[150px] w-full rounded-md 
+		        		<textarea  rows="3"  placeholder="Message" required className="block border-[1px] p-2 border-black  h-[150px] w-full rounded-md 
                   dark:bg-gray-100"></textarea>
-		      	</label> 
+		          	</label> 
 
 
                 </div>
                 <div className="  mt-3 flex-col md:flex-row lg:flex-row flex items-center gap-3">
-                <input  ref={dateRef} className=" p-1  border-[1px] border-black" type="date" name="time" id="" />
-                <input  ref={coachRef} placeholder="Coach Name" className=" w-[236px]  p-1  border-[1px] border-black" type="text" />
+                <input  className=" p-1  border-[1px] border-black" type="date" required name="time" id="" />
+                <input  placeholder="Coach Name" required name="CoachName" className=" w-[236px]  p-1  border-[1px] border-black" type="text" />
                 </div> 
                 {/* <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Responsive</button> */}
                
@@ -114,28 +116,19 @@ const App = () => {
 
                   
                   <div className=" flex justify-center">
-                  <input onClick={()=>document.getElementById('my_modal_1').showModal()} className=" bg-black text-white w-[300px] btn mt-5" type="submit" value="Book" />
+                  <button className=" bg-black text-white w-full btn mt-5" >submit</button>
+                  <ToastContainer />
                   </div>
-                              <dialog id="my_modal_1" className="modal">
-                          <div className="modal-box">
-                            <div className=" flex justify-center items-center  gap-5">
-			            		<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
-			            		<h1 className=" text-4xl font-serif text-black ">Booking Done</h1>
-			            	</div>
-                            
-                          </div>
-                        </dialog>
                 </form>
 
-             </div>
-            </div>
-            </div>
+               </div>
+               </div>
+               </div>
 
-    {/* ---------------------------------------------------- */}
+    {/* ----------------------------------------------------DATE CALENDER */}
 
            <div className=" flex justify-center mt-20">
            <Date></Date>
-
            </div>
       
               

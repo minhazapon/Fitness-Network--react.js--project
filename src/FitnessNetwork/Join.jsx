@@ -1,36 +1,38 @@
-import { useRef } from "react";
 
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Join = () => {
+    
 
-     const nameRef = useRef(null)
-     const emailRef = useRef(null)
-     const malRef = useRef(null)
-     const FemaleRef = useRef(null)
-     const dateRef = useRef(null)
+  const notifySuccess = () => toast.success(" Join Successfully ");
 
-
-    const join = e => {
-     
-       e.preventDefault()
-       console.log(nameRef.current.value)
-       console.log(emailRef.current.value)
-       console.log(malRef.current.value)
-       console.log(FemaleRef.current.value)
-       console.log(dateRef.current.value)
+  const notifyError= () => toast.error("Join Failed");
 
 
-
-    }
-
-
-
-
-
-
-
+	const onSubmit = async (event) => {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "6626a723-9dad-41ba-8220-fd9dedfeea00");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          notifySuccess()
+          event.target.reset();
+        } else {
+            notifyError()
+          setResult(data.message);
+        }
+      };
+   
 
     return (
         <div className=" mb-10 mt-10 ml-10 mr-10">
@@ -50,7 +52,7 @@ const Join = () => {
          </div>
 
 {/* ---------------------------------------------------- */}
-<form onSubmit={join} >
+        <form onSubmit={onSubmit}  >
           <div className=" flex justify-center mt-5">
              
              <div className=" flex-col md:flex-row lg:flex-row">
@@ -58,14 +60,14 @@ const Join = () => {
               
               <div>
                 <p className=" text-2xl font-serif">Full Name</p>
-                <input ref={nameRef} placeholder="Your Name" className=" p-1 mt-2 h-[50px] w-[350px]" type="text" />
+                <input  placeholder="Your Name" className=" p-1 mt-2 h-[50px] w-[350px]" type="text" name="FullName" />
                 <p className=" h-[1px] w-[350px] bg-slate-500"></p>
               </div>
 
 
               <div className=" mt-5">
                 <p className=" text-2xl font-serif">Your Email</p>
-                <input ref={emailRef}  placeholder="Your Email" className=" p-1 mt-2 h-[50px] w-[350px]" type="email" name="email" id="" />
+                <input   placeholder="Your Email" className=" p-1 mt-2 h-[50px] w-[350px]" type="email" name="email" id="" />
                 <p className=" h-[1px] w-[350px] bg-slate-500"></p>
               </div>
 
@@ -83,11 +85,11 @@ const Join = () => {
               <h1 className=" text-xl font-serif">Gender</h1>
             </div>
             <div className=" flex items-center gap-3">
-              <input ref={malRef} className=" border-[1px] border-black" type="checkbox" name="box" id="" />
+              <input  className=" border-[1px] border-black" type="checkbox" name="male" id="male" />
               <p  className=" text-xl font-serif" >Male</p> 
             </div>
             <div className=" flex items-center gap-3">
-              <input ref={FemaleRef} className=" border-[1px] border-black" type="checkbox" name="box" id="" />
+              <input  className=" border-[1px] border-black" type="checkbox" name="Female" id="Female" />
               <p  className=" text-xl font-serif" >Female</p> 
             </div>
             </div>
@@ -97,30 +99,14 @@ const Join = () => {
             <div className=" flex-col md:flex-row lg:flex-row mt-5 flex justify-center">
 
             <div>
-              <input ref={dateRef} placeholder="Date Of Birth" className=" p-1 mt-2 h-[50px] w-[350px]" type="date" name="date" id="" />
+              <input  placeholder="Date Of Birth" required className=" p-1 mt-2 h-[50px] w-[350px]" type="date" name="date" id="" />
               <p className=" h-[1px] w-[350px] bg-slate-500"></p>
             </div>
-
-
             </div>
-            
             <div>
             <div className=" flex-col md:flex-row lg:flex-row flex justify-center mt-5">
-              <input onClick={()=>document.getElementById('my_modal_1').showModal()} className=" btn bg-black text-white p-1 mt-2 h-[50px] w-[350px]" type="submit" value="Join Now Free" />
-
-              <dialog id="my_modal_1" className="modal">
-              <div className="modal-box">
-                <div className=" flex justify-center items-center  gap-5">
-				         	<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
-				         	<h1 className=" text-4xl font-serif text-black ">Join Free Done</h1>
-				         </div>
-                
-              </div>
-            </dialog>
-
-
-
-
+              <button className=" btn bg-black text-white p-1 mt-2 h-[50px] w-[350px]" >Join Now Free</button>
+              <ToastContainer />
             </div>
 
             

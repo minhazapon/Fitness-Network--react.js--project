@@ -1,25 +1,39 @@
-import { useRef } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
+
+	const notifySuccess = () => toast.success("Successfully Contact");
+
+    const notifyError= () => toast.error("Contact Failed");
+
+
+	const onSubmit = async (event) => {
+        event.preventDefault();
+        
+        const formData = new FormData(event.target);
     
-	const nameRef = useRef(null)
-	const emailRef = useRef(null)
-	const mesgRef = useRef(null)
-
-    const contact = e => {
-
-       e.preventDefault();
-	   console.log(nameRef.current.value)
-	   console.log(emailRef.current.value)
-	   console.log(mesgRef.current.value)
-
-
-	}
-
-
-
+        formData.append("access_key", "6626a723-9dad-41ba-8220-fd9dedfeea00");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          notifySuccess()
+          event.target.reset();
+        } else {
+            notifyError()
+          setResult(data.message);
+        }
+      };
+    
+	
 
 
     return (
@@ -32,7 +46,7 @@ const Contact = () => {
             <div className="  animate__animated animate__fadeInLeftBig animate__repeat-2     ">
 
             <section className="py-6  bg-black  text-white">
-	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+	    <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 		<div className="py-6 md:py-0 md:px-6">
 			<h1 className="text-4xl font-bold">Fitness <span className=" text-yellow-400">Network</span></h1>
 			<p className="pt-2 pb-4">Fill in the form to start a conversation</p>
@@ -58,33 +72,25 @@ const Contact = () => {
 				</p>
 			</div>
 		</div>
-		<form onSubmit={contact}  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+		<form  onSubmit={onSubmit}  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input ref={nameRef} name="name" type="text" placeholder="Full Name" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
+				<input  name="name" type="text" placeholder="Full Name" required className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
 			</label>
 			<label className="block">
-				<span className="mb-1"></span>
-				<input ref={emailRef} name="email" type="email" placeholder="Email address" className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
+				<span className="mb-1">Email</span>
+				<input name="email" type="email" placeholder="Email address" required className="block w-full p-2 rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea ref={mesgRef} name="text" placeholder="Message" rows="3" className="block w-full p-5 text-black rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+				<textarea  name="Message" placeholder="Message" rows="3" required className="block w-full p-5 text-black rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
 			</label>
-             <input onClick={()=>document.getElementById('my_modal_1').showModal()} className="self-center btn text-lg rounded focus:ring hover:ring focus:ring-opacity-75 " type="submit" value="Submit" />
+			 <button className=" w-full btn border-[1px] border-white bg-black text-white  ">Submit</button>
+			 <ToastContainer />
+                      
 
-			 {/* Open the modal using document.getElementById('ID').showModal() method */}
-           
-            <dialog id="my_modal_1" className="modal">
-              <div className="modal-box">
-                <div className=" flex justify-center items-center  gap-5">
-					<img className=" h-[50px]" src="https://i.ibb.co/YZ2GcFq/mark-1.png" alt="" />
-					<h1 className=" text-4xl font-serif text-black ">Submit Done</h1>
-				</div>
-                
-              </div>
-            </dialog>
-		
+			
+        
 		</form>
 	</div>
 </section>
