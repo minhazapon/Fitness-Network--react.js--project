@@ -50,6 +50,8 @@ import Read3 from './Blog/Read3';
 import AuthContext from './firebase/AuthContext';
 import PrivateRoute from './firebase/PrivateRoute';
 import OrderForm from './Products/OrderForm';
+import PathForm from './FitnessNetwork/PathForm';
+import PlanForm from './FitnessNetwork/PlanForm';
 
 
 
@@ -194,6 +196,14 @@ const router = createBrowserRouter([
       {
         path: "/orderForm",
         element:  <OrderForm></OrderForm> ,
+      },
+      {
+        path: "/pathForm",
+        element:   <PathForm></PathForm> ,
+      },
+      {
+        path: "/planForm",
+        element:  <PlanForm></PlanForm>     ,
       },
      
       {

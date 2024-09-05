@@ -1,20 +1,9 @@
 
-
-
-import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+ import {Link} from 'react-router-dom'
 
   import Marquee from "react-fast-marquee";
 
 const Flexible = () => {
-
-
-	const choose1  = () => toast("Get Started");
-    const choose2  = () => toast("Get Started");
-    const choose3  = () => toast("Get Started");
-
-
-
 
 
 
@@ -70,8 +59,12 @@ const Flexible = () => {
 							<span>Functional Training Areas</span>
 						</li>
 					</ul>
-					<button onClick={choose1} type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded  btn ">Get Started</button>
-					<ToastContainer />
+					 
+					 <Link to="/planForm" >
+					 <button type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded  btn ">Get Started</button>
+					 </Link>
+					
+					
 				</div>
 			</div>
 
@@ -106,8 +99,8 @@ const Flexible = () => {
 							<span>Group Exercise Classes</span>
 						</li>
 					</ul>
-					<button onClick={choose2} className=" btn">Get Started </button>
-					<ToastContainer />
+					<button className=" btn">Get Started </button>
+					
 				</div>
 			</div>
 
@@ -149,8 +142,8 @@ const Flexible = () => {
 							<span>Sports Facilities</span>
 						</li>
 					</ul>
-                    <button onClick={choose3} className=" btn">Get Started </button>
-					<ToastContainer />
+                    <button className=" btn">Get Started </button>
+				
 
 									</div>
 			</div>
