@@ -60,8 +60,10 @@ const Flexible = () => {
 						</li>
 					</ul>
 					 
-					 <Link to="/planForm" >
-					 <button type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded  btn ">Get Started</button>
+					 <Link className=' flex justify-center ' to="/planForm" >
+					 <div>
+					 <button className=" w-[300px] btn ">Get Started</button>
+					 </div>
 					 </Link>
 					
 					
@@ -99,7 +101,11 @@ const Flexible = () => {
 							<span>Group Exercise Classes</span>
 						</li>
 					</ul>
-					<button className=" btn">Get Started </button>
+					<Link className=' flex justify-center ' to="/planForm" >
+					 <div>
+					 <button className=" w-[300px] btn ">Get Started</button>
+					 </div>
+					 </Link>
 					
 				</div>
 			</div>
@@ -142,10 +148,14 @@ const Flexible = () => {
 							<span>Sports Facilities</span>
 						</li>
 					</ul>
-                    <button className=" btn">Get Started </button>
+					<Link className=' flex justify-center ' to="/planForm" >
+					 <div>
+					 <button className=" w-[300px] btn ">Get Started</button>
+					 </div>
+					 </Link>
 				
 
-									</div>
+					</div>
 			</div>
 
 
