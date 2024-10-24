@@ -1,2 +1,2 @@
 
-LiveLink: https://fitness-network-d5153.web.app/
+LiveLink: https://fitness-netwrk.netlify.app
