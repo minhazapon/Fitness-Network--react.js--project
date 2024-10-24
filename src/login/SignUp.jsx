@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { fireContext } from "../firebase/AuthContext";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -7,6 +9,8 @@ import { fireContext } from "../firebase/AuthContext";
 const SignUp = () => {
 
 	const {createUser} = useContext(fireContext)
+
+	const navigate = useNavigate()
 
     
     const handleUp = e =>{
@@ -17,9 +21,20 @@ const SignUp = () => {
 		console.log(email, password)
 
         createUser(email, password)
-		.then( result =>{
+		.then(result => {
 			console.log(result.user)
-		})
+			if(result){
+				Swal.fire({
+					title: 'Successfully sign up!',
+					text: 'Do you want to continue',
+					icon: 'success',
+					confirmButtonText: 'Cool'
+				  })
+	  
+			}
+			e.target.reset();
+			navigate('/')
+			})
 		.catch( error =>{
 			console.error(error)
 		})

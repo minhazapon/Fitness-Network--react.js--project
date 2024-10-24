@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { fireContext } from "../firebase/AuthContext";
+import Swal from "sweetalert2";
 
 
 
@@ -9,6 +10,8 @@ import { fireContext } from "../firebase/AuthContext";
 const Login = () => {
 
 	const {InUser, googleUser} = useContext(fireContext)
+
+	const navigate = useNavigate()
 
 
     const handleIn = e =>{
@@ -19,9 +22,20 @@ const Login = () => {
 		console.log(email, password)
         
 		InUser(email, password)
-		.then( result =>{
+		.then(result => {
 			console.log(result.user)
-		})
+			if(result){
+				Swal.fire({
+					title: 'Successfully Login!',
+					text: 'Do you want to continue',
+					icon: 'success',
+					confirmButtonText: 'Cool'
+				  })
+	  
+			}
+			e.target.reset();
+			navigate('/')
+			})
 		.catch( error =>{
 			console.error(error)
 		})
@@ -33,9 +47,20 @@ const Login = () => {
 		e.preventDefault()
 		 
 		googleUser()
-		.then( result =>{
+		.then(result => {
 			console.log(result.user)
-		})
+			if(result){
+				Swal.fire({
+					title: 'Successfully Login!',
+					text: 'Do you want to continue',
+					icon: 'success',
+					confirmButtonText: 'Cool'
+				  })
+	  
+			}
+			e.target.reset();
+			navigate('/')
+			})
 		.catch( error =>{
 			console.error(error)
 		})
@@ -82,8 +107,9 @@ const Login = () => {
 			</svg>
 			<p>Login with Google</p>
 		</button>
-		
-		
+		{
+			navigate('/')
+		}
 	</div>
 	<div className="flex items-center w-full my-4">
 		<hr  className="w-full text-gray-400" />

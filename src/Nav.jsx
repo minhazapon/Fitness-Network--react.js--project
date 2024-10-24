@@ -61,7 +61,9 @@ useEffect(() => {
       <div className="tooltip" data-tip="FitNetwork">
       <li><NavLink to="/fit" >FitNetwork</NavLink></li>
       </div>
-      <div className="tooltip" data-tip="Service">
+      { user && <> 
+      
+        <div className="tooltip" data-tip="Service">
       <li><NavLink to="/service" >Service</NavLink></li>
       </div>
       <div className="tooltip" data-tip="Products">
@@ -82,6 +84,9 @@ useEffect(() => {
       <div className="tooltip" data-tip="Dashboard">
       <li><NavLink to="/dash" >Dashboard</NavLink></li>
       </div>
+      
+      
+       </> }
        
   
        
@@ -93,7 +98,7 @@ useEffect(() => {
    </>
     return (
         <div  className=" mt-4">
-            <div className="navbar shadow-md bg-base-100">
+            <div className="navbar shadow-md bg-base-100  p-5 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

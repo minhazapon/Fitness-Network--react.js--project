@@ -71,15 +71,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/service",
-        element:  <Service></Service> ,
+        element: <PrivateRoute><Service></Service></PrivateRoute>    ,
       },
       {
         path: "/products",
-        element:  <ProductsMother></ProductsMother> ,
+        element: <PrivateRoute><ProductsMother></ProductsMother></PrivateRoute>    ,
       },
       {
         path: "/login",
-        element:    <Login></Login> ,
+        element:     <Login></Login> ,
       },
       {
         path: "/up",
@@ -87,123 +87,123 @@ const router = createBrowserRouter([
       },
       {
         path: "/gal",
-        element:  <Gallery></Gallery> ,
+        element:  <PrivateRoute><Gallery></Gallery></PrivateRoute>   ,
       },
       {
         path: "/app",
-        element:  <App></App> ,
+        element:  <PrivateRoute><App></App></PrivateRoute>   ,
       },
       {
         path: "/contact",
-        element:   <Contact></Contact> ,
+        element:  <PrivateRoute><Contact></Contact></PrivateRoute>    ,
       },
       {
         path: "/blog",
-        element:   <Blog></Blog> ,
+        element:  <PrivateRoute> <Blog></Blog></PrivateRoute>   ,
       },
       {
         path: "/train",
-        element:   <Trainer></Trainer> ,
+        element:  <PrivateRoute><Trainer></Trainer></PrivateRoute>    ,
       },
       {
         path: "/t1",
-        element:  <Alex></Alex> ,
+        element: <PrivateRoute><Alex></Alex></PrivateRoute>    ,
       },
       {
         path: "/t2",
-        element:   <Case></Case> ,
+        element:  <PrivateRoute><Case></Case></PrivateRoute>    ,
       },
       {
         path: "/t3",
-        element:  <Jamie></Jamie>,
+        element:  <PrivateRoute><Jamie></Jamie></PrivateRoute>  ,
       },
       {
         path: "/t4",
-        element:   <Taylor></Taylor>,
+        element:  <PrivateRoute> <Taylor></Taylor></PrivateRoute>   ,
       },
       {
         path: "/t5",
-        element:    <Jordan></Jordan>,
+        element:  <PrivateRoute><Jordan></Jordan></PrivateRoute>    ,
       },
       {
         path: "/t6",
-        element:   <Morgan></Morgan> ,
+        element:  <PrivateRoute><Morgan></Morgan></PrivateRoute>    ,
       },
       {
         path: "/t7",
-        element:  <Reed></Reed> ,
+        element:  <PrivateRoute><Reed></Reed></PrivateRoute>   ,
       },
       {
         path: "/t8",
-        element:   <Quin></Quin> ,
+        element:  <PrivateRoute><Quin></Quin></PrivateRoute>    ,
       },
       {
         path: "/t9",
-        element:   <Devin></Devin> ,
+        element:  <PrivateRoute> <Devin></Devin></PrivateRoute>   ,
       },
       {
         path: "/book",
-        element: <BookDay></BookDay> ,
+        element: <PrivateRoute><BookDay></BookDay></PrivateRoute>   ,
       },
       {
         path: "/benifits",
-        element:  <Benifits></Benifits> ,
+        element: <PrivateRoute><Benifits></Benifits></PrivateRoute>    ,
       },
       {
         path: "/learn",
-        element:   <Learn></Learn> ,
+        element: <PrivateRoute> <Learn></Learn></PrivateRoute>    ,
       },
       {
         path: "/more",
-        element:  <More></More> ,
+        element: <PrivateRoute><More></More></PrivateRoute>    ,
       },
       {
         path: "/join",
-        element:  <Join></Join> ,
+        element:  <PrivateRoute><Join></Join></PrivateRoute>   ,
       },
       {
         path: "/cv",
-        element:   <ClientsView></ClientsView> ,
+        element: <PrivateRoute><ClientsView></ClientsView></PrivateRoute>     ,
       },
       {
         path: "/call",
-        element:   <CallUs></CallUs> ,
+        element:  <PrivateRoute><CallUs></CallUs></PrivateRoute>    ,
       },
       {
         path: "/b1",
-        element:  <B1></B1> ,
+        element: <PrivateRoute><B1></B1></PrivateRoute>    ,
       },
       {
         path: "/b2",
-        element:  <B2></B2> ,
+        element: <PrivateRoute> <B2></B2></PrivateRoute>   ,
       },
       {
         path: "/b3",
-        element:  <B3></B3> ,
+        element:  <PrivateRoute> <B3></B3></PrivateRoute>  ,
       },
       {
         path: "/r1",
-        element:  <Read1></Read1>  ,
+        element: <PrivateRoute><Read1></Read1></PrivateRoute>     ,
       },
       {
         path: "/r2",
-        element:  <Read2></Read2> ,
+        element: <PrivateRoute><Read2></Read2></PrivateRoute>    ,
       },
       {
         path: "/r3",
-        element: <Read3></Read3> ,
+        element: <PrivateRoute><Read3></Read3></PrivateRoute>   ,
       },
       {
         path: "/orderForm",
-        element:  <OrderForm></OrderForm> ,
+        element:  <PrivateRoute><OrderForm></OrderForm></PrivateRoute>   ,
       },
       {
         path: "/pathForm",
-        element:   <PathForm></PathForm> ,
+        element:  <PrivateRoute><PathForm></PathForm></PrivateRoute>    ,
       },
       {
         path: "/planForm",
-        element:  <PlanForm></PlanForm>     ,
+        element: <PrivateRoute><PlanForm></PlanForm> </PrivateRoute>       ,
       },
      
       {
